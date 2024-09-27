@@ -1,0 +1,146 @@
+// Define custom font size variables for mobile breakpoint
+$mobile-font-sizes: (
+  "10": 10px,
+  "12": 12px,
+  "14": 14px,
+  "16": 16px,
+  "20": 20px,
+  "24": 24px,
+  "32": 32px,
+);
+
+// Responsive font-size utility classes for mobile
+@each $size-name, $size in $mobile-font-sizes {
+  @media (min-width: map-get($grid-breakpoints, "xs")) { // Mobile usually corresponds to xs in Bootstrap
+    .fs-xs-#{$size-name} {
+      font-size: $size; // Apply custom font size for mobile
+    }
+  }
+}
+
+
+// Responsive font-size utility classes for mobile ( mobile-to-tablet)
+@each $size-name, $size in $mobile-font-sizes {
+  @media (min-width: map-get($grid-breakpoints, "mobile")) { // Mobile usually corresponds to xs in Bootstrap
+    .fs-mobile-#{$size-name} {
+      font-size: $size; // Apply custom font size for mobile
+    }
+  }
+}
+// Define custom font size variables for tablet breakpoint
+// i make font-size round figure for tablet for easy to red. 
+$tablet-font-sizes: (
+  "7": 6.93px,
+  "9": 9.24px,
+  "12": 11.55px,
+  "14": 13.86px,
+  "15": 15.01px,
+  "18": 18.47px,
+  "24": 23.9px,
+);
+// Generate responsive font-size utility classes for mobile
+@each $size-name, $size in $tablet-font-sizes {
+  @media (min-width: map-get($grid-breakpoints, "tablet")) { // Mobile usually corresponds to xs in Bootstrap
+    .fs-tablet-#{$size-name} {
+      font-size: $size; // Apply custom font size for mobile
+    }
+  }
+}
+// Define custom font size variables for pc breakpoint
+ 
+
+
+$pc-font-sizes: (
+  "12": 12px,
+  "16": 16px,
+  "20": 20px,
+  "24": 24px,
+  "26": 26px,
+  "32": 32px,
+  "40": 40px,
+);
+// Generate responsive font-size utility classes for mobile
+@each $size-name, $size in $pc-font-sizes {
+  @media (min-width: map-get($grid-breakpoints, "desktop")) { // Mobile usually corresponds to xs in Bootstrap
+    .fs-pc-#{$size-name} {
+      font-size: $size; // Apply custom font size for mobile
+    }
+  }
+}
+
+
+
+
+// TODO: line-height for mobile, tablet, pc
+
+
+
+
+// Define custom font size variables for mobile breakpoint
+$mobile-line-height: (
+  "15": 15px,
+  "18": 18px,
+  "21": 21px,
+  "24": 24px,
+  "30": 30px,
+  "36": 36px,
+  "48": 48px,
+);
+
+// Responsive line-height utility classes for mobile
+@each $size-name, $size in $mobile-line-height {
+  @media (min-width: map-get($grid-breakpoints, "xs")) { // Mobile usually corresponds to xs in Bootstrap
+    .lh-xs-#{$size-name} {
+      line-height: $size; // Apply custom font size for mobile
+    }
+  }
+}
+
+
+// Responsive line-height utility classes for mobile ( mobile-to-tablet)
+@each $size-name, $size in $mobile-line-height {
+  @media (min-width: map-get($grid-breakpoints, "mobile")) { // Mobile usually corresponds to xs in Bootstrap
+    .lh-mobile-#{$size-name} {
+      line-height: $size; // Apply custom line-height for mobile
+    }
+  }
+}
+// Define custom line-height variables for tablet breakpoint
+// i make font-size round figure for tablet for easy to red. 
+$tablet-line-height: (
+  "10": 10.39px,
+  "14": 13.86px,
+  "17": 17.32px,
+  "21": 20.78px,
+  "28": 27.71px,
+  "34": 34.64px,
+);
+// Generate responsive line-heightutility classes for mobile
+@each $size-name, $size in $tablet-line-height {
+  @media (min-width: map-get($grid-breakpoints, "tablet")) { // Mobile usually corresponds to xs in Bootstrap
+    .lh-tablet-#{$size-name} {
+      line-height: $size; // Apply custom line-height for mobile
+    }
+  }
+}
+// Define custom line-height variables for pc breakpoint
+ 
+
+
+$pc-line-height: (
+  "18": 18px,
+  "24": 24px,
+  "30": 30px,
+  "32": 32px,
+  "36": 36px,
+  "39": 39px,
+  "60": 60px,
+);
+// Generate responsive line-height utility classes for mobile
+@each $size-name, $size in $pc-line-height {
+  @media (min-width: map-get($grid-breakpoints, "desktop")) { // Mobile usually corresponds to xs in Bootstrap
+    .lh-pc-#{$size-name} {
+      line-height: $size; // Apply custom line-height for mobile
+    }
+  }
+}

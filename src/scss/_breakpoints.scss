@@ -1,0 +1,8 @@
+// custom breakpoint
+
+$custom-grid-breakpoints: (
+  mobile: 428px,
+  tablet: 831.37px,
+  desktop: 1440px,
+);
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);

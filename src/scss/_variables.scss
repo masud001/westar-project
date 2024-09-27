@@ -1,0 +1,37 @@
+$font-size-root:              16px;
+$font-size-base:              1rem;
+
+
+$font-family-sans-serif:      'Poppins', sans-serif;
+$font-family-base:            $font-family-sans-serif;
+// negative margins
+$enable-negative-margins: true;
+
+
+
+
+$clr-black: #000000;
+$clr-white: #ffffff;
+$clr-gold:#FFE800;
+$clr-teal:#004AAD;
+$whitesmoke: #edefee;
+$gainsboro:#e5e5e5;
+
+
+// bootstrap accordion reset for footer
+$accordion-button-padding-x:10px;
+$accordion-button-padding-y:10px;
+$accordion-border-width:0;
+$accordion-color: $clr-white;
+$accordion-bg: $clr-teal;
+$accordion-button-color: $clr-white;
+$accordion-button-bg: $clr-teal; 
+$accordion-button-active-bg: $clr-teal;   
+$accordion-button-active-color: $clr-white;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-color: rgba(255,255,255,1);
+$accordion-icon-active-color: rgba(255,255,255,1);
+$accordion-icon-active-color: $clr-white;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");

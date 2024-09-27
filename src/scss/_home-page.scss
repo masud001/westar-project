@@ -1,0 +1,387 @@
+.header-section{
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+// hero section 
+.hero-section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    width: 100%;
+    @media (min-width: 320px) {
+        height: 405px;
+        background-image: url("../images/home-page/background/hero-background-image-for-mobile.webp");
+
+    }
+    @media (min-width: 768px) {
+        height: 290px;
+        background-image: url("../images/home-page/background/hero-background-image-for-tablet.webp");
+    }
+    @media (min-width: 1440px) {
+        height: 456px;
+        background-image: url("../images/home-page/background/hero-background-image-for-desktop.webp");
+    }
+}
+.hero-img-thumbnail{
+    @media (min-width: 320px) {
+        width: 99px;
+        height: 99px;
+        img{
+            width: 75px;
+            height: 78px;
+        }
+    }
+    @media (min-width: 768px) {
+        width: 75px;
+        height: 75px;
+        img{
+            width: 57px;
+            height: 59px;
+        }
+    }
+    @media (min-width: 1440px) {
+        width: 131px;
+        height: 131px;
+        img{
+            width: 100px;
+            height: 104px;
+        }
+    }
+}
+
+.search-bar-section{
+    @media (min-width: 320px) {
+        margin-top: -56px;
+    }
+    @media (min-width: 768px) {
+        margin-top: -26px;
+    }
+    
+    @media (min-width: 1440px) {
+        margin-top: -56px;
+    }
+    .search-bar{
+        border-radius: 20px;
+        padding: 18px 22px;
+        input{
+            @media (min-width: 320px) {
+                padding: 13px 27px;
+            }
+            @media (min-width: 768px) {
+                padding: 8px 15px;
+            }
+            @media (min-width: 1440px) {
+              padding: 13px 27px;
+            }
+            &::placeholder{
+                color: var(--clr-black);
+                @media (min-width: 320px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                @media (min-width: 768px) {
+                    font-size: 9.24px;
+                    line-height: 14px;
+                }
+                @media (min-width: 1440px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .search-tags{
+        button{
+            background-color: rgba(225,225,225,0.3);
+            padding: 8px 22px;
+            @media (min-width: 320px) {
+                    font-size: 12px;
+                }
+                @media (min-width: 768px) {
+                    font-size: 9.24px;
+                }
+                @media (min-width: 1440px) {
+                    font-size: 16px;
+                }
+        }
+    }
+}
+// hot deal section  
+
+.hot-deal-section{
+    .title{
+        span{
+            img{
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+}
+// home hot deal slider 
+.slider-content{
+    .slider-img{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .slider-text{
+        background-color: rgba(0,0,0,0.3);
+    }
+
+}
+.mySwiperSearchByPartType{
+    .slider-img{
+        border: 1px solid rgba(0,0,0,0.2);
+        @media (min-width: 320px) {
+            // width: 235px;
+            height: 216px;
+        }
+        @media (min-width: 768px) {
+            // width: 188px;
+            height: 173px;
+        }
+        @media (min-width: 1440px) {
+            // width: 325px;
+            height: 299px;
+        }
+    }
+}
+.whatToExpectSlider{
+    .slider-content{
+        @media (min-width: 320px) {
+            // width: 223px;
+            height: 197px;
+        }
+        @media (min-width: 768px) {
+            // width: 200;
+            height: 149px;
+        }
+        @media (min-width: 1440px) {
+            // width: 345px;
+            height: 259px;
+        }
+    }
+}
+//  Silence the Vibration
+.section-wrapper{
+    padding: 30px 0;
+
+    .section-image{
+        
+        @media (min-width: 320px) {
+            margin-top: 15px;
+            max-height: 118px;
+            img{
+                height: auto;
+                &:nth-child(1){
+                    width: 165px;
+                }
+                &:nth-child(2){
+                    width: 114px;
+                }
+                &:nth-child(3){
+                    width: 114px;
+                }
+                &:nth-child(4){
+                    width: 114px;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            margin-top: 25px;
+            max-height: 119px;
+            img{
+                height: auto;
+                &:nth-child(1){
+                    width: 144px;
+                }
+                &:nth-child(2){
+                    width: 144px;
+                }
+                &:nth-child(3){
+                    width: 115.4px;
+                }
+                &:nth-child(4){
+                    width: 107px;
+                }
+            }
+    
+        }
+        @media (min-width: 1440px) {
+            margin-top: 45px;
+            max-height: 205px;
+            img{
+                height: auto;
+                &:nth-child(1){
+                    width: 251px;
+                }
+                &:nth-child(2){
+                    width: 251px;
+                }
+                &:nth-child(3){
+                    width: 200px;
+                }
+                &:nth-child(4){
+                    width: 200px;
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.popular-item-btn{
+    border: 1px solid rgba($color: #000000, $alpha: 0.20);
+    padding: 8px 22px;
+    @media (min-width: 320px) {
+        width: 100%
+    }
+    @media (min-width: 768px) {
+        width: 100%
+    }
+    @media (min-width: 1440px) {
+        width: 100%
+    }
+}
+.apply-btn{
+    @media (min-width: 320px) {
+        width: 250px;
+    }
+    @media (min-width: 768px) {
+        width: 206px;
+    }
+    @media (min-width: 1440px) {
+        width: 357px;
+    }
+}
+
+
+// subscription 
+.subscription-form{
+    input{
+        @media (min-width: 320px) {
+            width: 255px !important;
+        }
+        @media (min-width: 768px) {
+            width: 235px !important;
+        }
+        @media (min-width: 1440px) {
+            width: 406px !important;
+        
+        }
+        &::placeholder{
+            color: var(--clr-black);
+            @media (min-width: 320px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            @media (min-width: 768px) {
+                font-size: 9.24px;
+                line-height: 14px;
+            }
+            @media (min-width: 1440px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+
+
+.timeline-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #436285 !important;
+  position: relative;
+}
+.timeline-card span{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    @media (min-width: 320px) {
+        width: 50px;
+        height: 50px;
+        img{
+            width: 29px;
+            height: 29px;
+        }
+
+    }
+    @media (min-width: 768px) {
+        width: 45px;
+        height: 45px;
+        img{
+            width: 28px;
+            height: 28px;
+        }
+    }
+    @media (min-width: 1440px) {
+        width: 78px;
+        height: 78px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+.timeline li:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+    transform: translateX(-50%);
+    @media (min-width: 320px) {
+        left: 5%;
+    }
+    @media (min-width: 768px) {
+        left: 4%;
+    }
+    @media (min-width: 1200px) {
+        left: 3%;
+    }
+    @media (min-width: 1440px) {
+        left: 5%;
+    }
+}
+
+.timeline li:first-child:before {
+  top: 50%;
+  height: 50%;
+}
+
+.timeline li:last-child:before {
+  bottom: 50%;
+  height: 50%;
+}
+
+.subcard {
+  padding: 2.5em 1.5em 2.5em 1.5em;
+  background: #fdfdfd;
+  color: black;
+  width: -webkit-fill-available;
+  min-height: 3.3rem;
+  @media (min-width: 320px) {
+    padding: 1em 1.5em 1em 1.5em;
+  }
+  @media (min-width: 768px) {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+  }
+  @media (min-width: 1440px) {
+    padding: 2.5em 1.5em 2.5em 1.5em;
+  }
+}

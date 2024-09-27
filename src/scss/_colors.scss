@@ -1,0 +1,12 @@
+// custom colors
+
+
+
+$custom-theme-colors: (
+  clr-black: $clr-black,
+  clr-white: $clr-white,
+  clr-gold:$clr-gold,
+  clr-teal:$clr-teal,
+  
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
