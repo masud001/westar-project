@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- swiper slider css file -->
-    <!-- <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" /> -->
-    <link
+    <!-- swiper slider css file (from local Dir) -->
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+    <!-- swiper slider css file (from cdn) -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
 
     <!-- main css file -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -2322,116 +2323,17 @@
         </div>
       </section>
     </div>
-    <div class="">
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-      lorem <br />
-    </div>
 
+    <!-- bootstrap js file (from local Dir) -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="./assets/swiper/swiper-bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <!-- swiper slider js file (from local) -->
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <!-- cdn link (for global usage) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script> -->
 
     <script>
+      // to use (init) this slider you have to use this camel case class name in html
+      // slider first
       const swiper = new Swiper(".mySwiperHotDeal", {
         // Optional parameters
         spaceBetween: 30,
@@ -2467,6 +2369,7 @@
         //   prevEl: ".swiper-button-prev",
         // },
       });
+
       // slider second
       const swiper2 = new Swiper(".mySwiperSearchByPartType", {
         // Optional parameters
@@ -2503,8 +2406,8 @@
         //   prevEl: ".swiper-button-prev",
         // },
       });
-      // slider 3
 
+      // slider third
       const swiper3 = new Swiper(".whatToExpectSlider", {
         // Optional parameters
         spaceBetween: 30,
