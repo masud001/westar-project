@@ -1,32 +1,50 @@
+// Select all list items that contain a sublist
+const listItems = document.querySelectorAll('.list-item');
+const sublistItems = document.querySelectorAll('.sublist-item');
 
-
-// import Swiper JS
-import Swiper from '../../../node_modules/swiper/swiper-bundle.min.js';
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 20,
-    breakpoints: {  // Responsive breakpoints
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
+listItems.forEach(item => {
+    item.addEventListener('click', (event) => {
+        // Select the current sublist and icon
+        const sublist = item.querySelector('.sublist');
+        const icon = item.querySelector('.icon');
+        
+        // If the clicked sublist is already open, close it
+        if (sublist.classList.contains('show')) {
+            sublist.classList.remove('show');
+            icon.textContent = '+';
+            setTimeout(() => {
+                sublist.style.display = 'none';
+            }, 500);  // Duration of the CSS transition (0.5s)
+        } else {
+            // Close all other sublists and reset their icons to plus
+            listItems.forEach(list => {
+                const otherSublist = list.querySelector('.sublist');
+                const otherIcon = list.querySelector('.icon');
+                if (otherSublist.classList.contains('show')) {
+                    otherSublist.classList.remove('show');
+                    otherIcon.textContent = '+';
+                    setTimeout(() => {
+                        otherSublist.style.display = 'none';
+                    }, 500);  // Duration of the CSS transition (0.5s)
+                }
+            });
+            
+            // Open the clicked sublist and change the icon to minus
+            sublist.style.display = 'block';
+            setTimeout(() => {
+                sublist.classList.add('show');
+                icon.textContent = '−';  // Change to minus sign
+            }, 10);  // Small delay to allow transition
         }
-    },
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+        // Stop the click event from affecting other elements
+        event.stopPropagation();
+    });
+});
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+// Prevent sublist items from triggering the list item click event
+sublistItems.forEach(subItem => {
+    subItem.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevents click event on sublist items from bubbling up to parent
+    });
 });

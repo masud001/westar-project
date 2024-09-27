@@ -22,7 +22,26 @@ function buildBootstrapJS() {
 function buildStyles() {
     return src('src/scss/styles.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(purgecss({content: ['src/*.html']}))
+        .pipe(purgecss({content: [
+            'src/*.html', 
+            // 'src/**/*.js' // Uncomment this line if you want to include JS files too
+        ],
+            // extractors: [
+            //     {
+            //         extractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+            //         extensions: ['html', 'js']
+            //     }
+            // ],
+            satisfies:{
+                standard: [
+                    /^offcanvas/,  // Safelisting all offcanvas-related classes
+                    'show',        // For showing the offcanvas
+                    'fade',        // Fade transition for modals
+                    'offcanvas-backdrop',  // Safelists the offcanvas backdrop
+                    'modal-backdrop',  // For any modals you might use
+                ]
+            }
+        }))
         .pipe(dest('src/assets/css'));
 }
 
