@@ -24,14 +24,14 @@ function buildStyles() {
         .pipe(sass().on('error', sass.logError))
         .pipe(purgecss({content: [
             'src/*.html', 
-            // 'src/**/*.js' // Uncomment this line if you want to include JS files too
+            'src/**/*.js' // Uncomment this line if you want to include JS files too
         ],
-            // extractors: [
-            //     {
-            //         extractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-            //         extensions: ['html', 'js']
-            //     }
-            // ],
+            extractors: [
+                {
+                    extractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+                    extensions: ['html', 'js']
+                }
+            ],
             satisfies:{
                 standard: [
                     /^offcanvas/,  // Safelisting all offcanvas-related classes
