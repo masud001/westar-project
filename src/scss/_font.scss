@@ -7,6 +7,7 @@ $mobile-font-sizes: (
   "20": 20px,
   "24": 24px,
   "32": 32px,
+  "36": 36px,
 );
 
 // Responsive font-size utility classes for mobile
@@ -31,11 +32,13 @@ $mobile-font-sizes: (
 // i make font-size round figure for tablet for easy to red. 
 $tablet-font-sizes: (
   "7": 6.93px,
+  "8": 8.08px,
   "9": 9.24px,
   "12": 11.55px,
   "14": 13.86px,
   "15": 15.01px,
   "18": 18.47px,
+  "21": 20.78px,
   "24": 23.9px,
 );
 // Generate responsive font-size utility classes for mobile
@@ -52,11 +55,13 @@ $tablet-font-sizes: (
 
 $pc-font-sizes: (
   "12": 12px,
+  "14": 14px,
   "16": 16px,
   "20": 20px,
   "24": 24px,
   "26": 26px,
   "32": 32px,
+  "36": 36px,
   "40": 40px,
 );
 // Generate responsive font-size utility classes for mobile
@@ -85,6 +90,8 @@ $mobile-line-height: (
   "30": 30px,
   "36": 36px,
   "48": 48px,
+  "54": 54px,
+
 );
 
 // Responsive line-height utility classes for mobile
@@ -109,10 +116,12 @@ $mobile-line-height: (
 // i make font-size round figure for tablet for easy to red. 
 $tablet-line-height: (
   "10": 10.39px,
+  "12": 12px,
   "14": 13.86px,
   "17": 17.32px,
   "21": 20.78px,
   "28": 27.71px,
+  "31": 31px,
   "34": 34.64px,
 );
 // Generate responsive line-heightutility classes for mobile
@@ -130,10 +139,12 @@ $tablet-line-height: (
 $pc-line-height: (
   "18": 18px,
   "24": 24px,
+  "21": 21px,
   "30": 30px,
   "32": 32px,
   "36": 36px,
   "39": 39px,
+  "54": 54px,
   "60": 60px,
 );
 // Generate responsive line-height utility classes for mobile
