@@ -1,4 +1,6 @@
-// Select all list items that contain a sublist
+
+// TODO: MOBILE MENU
+//( MOBILE MENU) Select all list items that contain a sublist
 const listItems = document.querySelectorAll('.list-item');
 const sublistItems = document.querySelectorAll('.sublist-item');
 
