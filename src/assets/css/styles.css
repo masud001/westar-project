@@ -816,6 +816,9 @@ progress {
     flex: 0 0 auto;
     width: 66.66666667%;
   }
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
   .offset-lg-4 {
     margin-left: 33.33333333%;
   }
@@ -2366,6 +2369,10 @@ textarea.form-control {
   padding: 0 !important;
 }
 
+.p-2 {
+  padding: 0.5rem !important;
+}
+
 .p-3 {
   padding: 1rem !important;
 }
@@ -2759,6 +2766,9 @@ textarea.form-control {
   }
   .p-lg-1 {
     padding: 0.25rem !important;
+  }
+  .p-lg-4 {
+    padding: 1.5rem !important;
   }
   .px-lg-3 {
     padding-right: 1rem !important;
@@ -3549,4 +3559,78 @@ textarea.form-control {
   .product-details-row .third-row {
     width: 50%;
   }
+}
+
+.why-westar img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 320px) {
+  .why-westar img {
+    width: 160px;
+    height: 42px;
+  }
+}
+@media (min-width: 768px) {
+  .why-westar img {
+    width: 267px;
+    height: 46px;
+  }
+}
+@media (min-width: 1440px) {
+  .why-westar img {
+    width: 462px;
+    height: 80px;
+  }
+}
+.why-westar.wester-background {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  width: 100% !important;
+  height: 100%;
+}
+@media (min-width: 320px) {
+  .why-westar.wester-background {
+    background: linear-gradient(90deg, rgb(40, 55, 138), rgba(40, 55, 138, 0.3)), url("../images/product-page/product-image/why-westar-bg-mobile.jpg");
+    height: 186px;
+  }
+}
+@media (min-width: 768px) {
+  .why-westar.wester-background {
+    height: 243px;
+    background: linear-gradient(90deg, rgb(40, 55, 138), rgba(40, 55, 138, 0.3)), url("../images/product-page/product-image/why-westar-bg-tablet.jpg");
+  }
+}
+@media (min-width: 1440px) {
+  .why-westar.wester-background {
+    height: 421px;
+    background: linear-gradient(90deg, rgb(40, 55, 138), rgba(40, 55, 138, 0.3)), url("../images/product-page/product-image/why-westar-bg-pc.jpg");
+  }
+}
+
+.component-a .accordion {
+  background-color: white;
+}
+.component-a .accordion .accordion-item {
+  background-color: white;
+  color: black !important;
+}
+.component-a .accordion .accordion-button {
+  background-color: white !important;
+  transition: background-color 0.3s;
+  color: black !important;
+}
+.component-a .accordion .accordion-button.active {
+  background-color: black;
+  color: red;
+}
+.component-a .accordion .accordion-button:not(.collapsed) {
+  background-color: black;
+}
+.component-a .accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+}
+.component-a .accordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
 }

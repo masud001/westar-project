@@ -19,7 +19,7 @@
 @import "./utilities";
 @import "./colors";
 @import "./font";
-
+@import "./mixin";
 
 // Import Bootstrap's main SCSS file
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -40,3 +40,14 @@
 // Import custom SCSS files
 @import "./home-page";
 @import "product-page";
+
+
+// Component A
+.component-a {
+    @include accordion-styles(
+        $accordion-bg: white, 
+        $active-bg-color: black,
+        $icon-color: black, 
+        $icon-active-color: black,
+    );
+}

@@ -233,3 +233,42 @@ $border-color: var(--clr-gold);
     }
 }
 
+.why-westar{
+    img{
+        width: 100%;
+        height: 100%;
+        @media (min-width: 320px) {
+            width: 160px;
+            height: 42px;
+        }
+        @media (min-width: 768px) {
+            width: 267px;
+            height: 46px;
+        }
+        @media (min-width: 1440px) {
+            width: 462px;
+            height: 80px;
+        }
+    }
+    &.wester-background{
+        background-repeat: no-repeat !important;
+        background-size:cover !important;
+        background-position: center center !important;
+        width: 100% !important;
+        height: 100%;
+        @media (min-width: 320px) {
+            background:linear-gradient(90deg, rgba(40, 55, 138, 1), rgba(40, 55, 138, 0.3)), url("../images/product-page/product-image/why-westar-bg-mobile.jpg");
+            height: 186px;
+        }
+        @media (min-width: 768px) {
+            height: 243px;
+            background:linear-gradient(90deg, rgba(40, 55, 138, 1), rgba(40, 55, 138, 0.3)), url("../images/product-page/product-image/why-westar-bg-tablet.jpg");
+        }
+        @media (min-width: 1440px) {
+            height: 421px;
+            background:linear-gradient(90deg, rgba(40, 55, 138, 1), rgba(40, 55, 138, 0.3)), url("../images/product-page/product-image/why-westar-bg-pc.jpg");
+        }
+
+    }
+}
+

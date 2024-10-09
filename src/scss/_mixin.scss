@@ -1,0 +1,48 @@
+// Define default accordion colors
+$default-accordion-bg: red;
+$default-accordion-button-active-bg: #007bff;
+
+@mixin accordion-styles(
+    $accordion-bg: $default-accordion-bg, 
+    $active-bg-color: $default-accordion-button-active-bg,
+    $icon-color: rgba(255,255,255,1),
+    $icon-active-color: rgba(255,255,255,1),
+    $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>"),
+    $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>")
+    ) {
+    .accordion {
+        background-color: $accordion-bg;
+        .accordion-item{
+            background-color: $accordion-bg;
+            color:$active-bg-color !important;
+        }
+        .accordion-button {
+            background-color: $accordion-bg !important;
+            transition: background-color 0.3s;
+            color:$active-bg-color !important;
+
+            &.active {
+                background-color: $active-bg-color;
+                color: red; // Change text color if needed
+            }
+
+            &:not(.collapsed) {
+                background-color: $active-bg-color;
+                &::after {
+                    background-image: $accordion-button-active-icon;
+                }
+            }
+            &::after{
+                background-image: $accordion-button-icon;
+            }
+            // Icon color
+            .accordion-icon {
+                color: $icon-color;
+
+                &.active {
+                    color: $icon-active-color; // Change icon color when active
+                }
+            }
+        }
+    }
+}
