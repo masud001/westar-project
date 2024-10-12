@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- swiper slider css file (from local Dir) -->
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+    <!-- swiper slider css file (from cdn) -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <!-- main css file -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Westar Cart Page</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- shopping cart section start -->
+      <section class="shopping-cart-section py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3
+                class="text-clr-black fw-600 fs-xs-12 lh-xs-18 fs-tablet-12 lh-tablet-17 fs-pc-20 lh-pc-28"
+              >
+                Shopping Cart
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <!-- single cart items -->
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="border rounded-1 border-clr-black-20 p-3 bgclr-white shadow-lg position-relative"
+                >
+                  <div class="d-flex gap-3 align-items-start">
+                    <div class="flex-shrink-0 cart-items-img">
+                      <img
+                        width="132"
+                        height="120"
+                        class="img-fluid flex-shrink-0"
+                        src="https://via.placeholder.com/132x120"
+                        alt="product items"
+                      />
+                    </div>
+                    <div class="cart-items-details d-flex flex-column gap-1">
+                      <h4
+                        class="text-clr-black pe-3 pe-md-0 fw-500 fs-xs-10 lh-xs-18 fs-tablet-8 lh-tablet-17 fs-pc-14 lh-pc-24 m-0 p-0"
+                      >
+                        2 Pcs Rear Power Window Switch for Chevy Silverado 1500
+                        GMC Sierra 1500 Yukon Buick
+                      </h4>
+                      <p
+                        class="text-clr-black-70 fw-400 fs-xs-10 lh-xs-18 fs-tablet-6 lh-tablet-14 fs-pc-10 lh-pc-18 m-0 p-0"
+                      >
+                        Part Number: EM-2949
+                      </p>
+                      <div
+                        class="cart-items-count d-flex gap-2 align-items-center"
+                      >
+                        <span
+                          class="text-clr-black-70 fw-400 fs-xs-10 lh-xs-18 fs-tablet-6 lh-tablet-14 fs-pc-10 lh-pc-18 m-0 p-0"
+                          >Quantity:</span
+                        >
+                        <select
+                          id="cart-select-products"
+                          class="form-select form-select-sm"
+                          aria-label="cart select products"
+                        >
+                          <option selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </div>
+                      <p
+                        class="cart-items-price text-clr-black fw-500 fs-xs-16 lh-xs-24 fs-tablet-12 lh-tablet-17 fs-pc-20 lh-pc-28 m-0 p-0"
+                      >
+                        $24.99
+                      </p>
+                    </div>
+                    <div
+                      class="cart-trash flex-shrink-0 align-self-end align-self-md-start"
+                    >
+                      <img
+                        width="18"
+                        height="19"
+                        class="img-fluid flex-shrink-0"
+                        src="./assets/images/cart-page/icons/trash.svg"
+                        alt="cart trash icons"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex gap-2 align-items-center mt-16">
+                    <span class="flex-shrink-0"
+                      ><img
+                        width="20"
+                        height="17"
+                        class="img-fluid"
+                        src="./assets/images/cart-page/icons/cars-icons.svg"
+                        alt="car icon"
+                    /></span>
+                    <span
+                      class="fw-600 fs-xs-10 lh-xs-18 fs-tablet-8 lh-tablet-17 fs-pc-14 lh-pc-24"
+                      ><span class="fw-500">Fits:</span> 2004 Acura CSV 4-Door
+                      Sedan V6 4.5L 350 cc</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="d-flex flex-column gap-3">
+                <h4
+                  class="text-clr-black fw-600 fs-xs-12 lh-xs-18 fs-tablet-12 lh-tablet-17 fs-pc-20 lh-pc-28 m-0 p-0"
+                >
+                  Order Summary
+                </h4>
+                <div class="add-coupon-code">
+                  <label
+                    for="apply-coupon"
+                    class="text-clr-black mb-8 fw-500 fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                  >
+                    Coupon code
+                  </label>
+                  <div class="input-group rounded-0">
+                    <input
+                      id="apply-coupon"
+                      type="text"
+                      class="form-control rounded-0"
+                      placeholder="Enter Coupon Code"
+                      aria-label="Enter Coupon Code"
+                      aria-describedby="Enter Coupon Code"
+                    />
+                    <span
+                      class="input-group-text bgclr-black text-clr-white rounded-0"
+                      id="Enter Coupon Code"
+                      >Apply</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column gap-2 border-top border-bottom border-clr-black-20 py-2"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span
+                      class="fw-400 text-clr-black-70 fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >Item Total</span
+                    >
+                    <span
+                      class="fw-600 text-clr-black fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >$24.99</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span
+                      class="fw-400 text-clr-black-70 fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >Shipping & Handling
+                      <em>
+                        <a
+                          class="ms-2 text-reset fs-xs-8 lh-xs-12 fs-tablet-7 lh-tablet-10 fs-pc-12 lh-pc-24"
+                          href="./#"
+                          >Learn more</a
+                        >
+                      </em>
+                    </span>
+                    <span
+                      class="fw-600 text-clr-black fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >FREE</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span
+                      class="fw-400 text-clr-black-70 fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >Sales Tax
+
+                      <em>
+                        <a
+                          class="ms-2 text-reset fs-xs-8 lh-xs-12 fs-tablet-7 lh-tablet-10 fs-pc-12 lh-pc-24"
+                          href="./#"
+                          >Learn more</a
+                        >
+                      </em>
+                    </span>
+                    <span
+                      class="fw-600 text-clr-black fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >$5.10</span
+                    >
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span
+                      class="fw-600 text-clr-black fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >Total
+                    </span>
+                    <span
+                      class="fw-600 text-clr-black fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                      >$30.10</span
+                    >
+                  </div>
+                </div>
+                <!-- payment info  -->
+                <div class="border-bottom border-clr-black-20 pb-16">
+                  <div
+                    class="d-flex gap-2 align-items-center bgclr-lynx-white py-2 px-3 rounded"
+                  >
+                    <span
+                      ><img
+                        class="img-fluid"
+                        width="20"
+                        height="24"
+                        src="./assets/images/product-page/icons/logos-paypal.svg"
+                        alt="paypal logo"
+                    /></span>
+                    <p
+                      class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-8 lh-tablet-12 fs-pc-13 lh-pc-20 m-0 p-0 text-clr-black"
+                    >
+                      Pay in 4 interest free payments on purchase of $30-$1500.
+                      <a
+                        href="./#"
+                        class="fw-500 text-clr-teal text-decoration-underline"
+                        >Learn More</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <!-- payment method  -->
+                <div class="">
+                  <h5
+                    class="text-uppercase text-clr-black fw-500 fs-xs-12 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                  >
+                    PAYMENT METHODS
+                  </h5>
+                  <div
+                    class="d-flex gap-2 justify-content-between align-items-center"
+                  >
+                    <div
+                      class="border payment-card rounded-1 border-clr-black-20 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <span
+                        ><img
+                          width="20"
+                          height="16"
+                          class="img-fluid"
+                          src="./assets/images/cart-page/icons/card-icons.svg"
+                          alt="visa icon"
+                      /></span>
+                      <span
+                        class="fw-600 text-capitalize fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                        >card</span
+                      >
+                    </div>
+                    <div
+                      class="border payment-card rounded-1 border-clr-black-20 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <span
+                        ><img
+                          width="20"
+                          height="16"
+                          class="img-fluid"
+                          src="./assets/images/cart-page/icons/card-icons.svg"
+                          alt="visa icon"
+                      /></span>
+                      <span
+                        class="fw-600 text-capitalize fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                        >card</span
+                      >
+                    </div>
+                    <div
+                      class="border payment-card rounded-1 border-clr-black-20 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <span
+                        ><img
+                          width="20"
+                          height="16"
+                          class="img-fluid"
+                          src="./assets/images/cart-page/icons/card-icons.svg"
+                          alt="visa icon"
+                      /></span>
+                      <span
+                        class="fw-600 text-capitalize fs-xs-10 lh-xs-18 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24"
+                        >card</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- shopping cart section end -->
+      <!-- shipping and Warranty section start  -->
+      <section
+        class="shipping-and-warranty-section bgclr-white py-4 border-bottom border-clr-black-20 d-none d-md-block"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3
+                class="text-clr-black fw-600 fs-xs-16 lh-xs-24 fs-tablet-14 lh-tablet-17 fs-pc-24 lh-pc-36"
+              >
+                Shipping & Warranty
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="swiper whatToExpectSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="slider-content d-flex flex-column gap-2 gap-lg-3 justify-content-center bgclr-aircraft-white rounded-4 p-3 text-center align-items-center"
+                    >
+                      <div class="slider-icon">
+                        <img
+                          width="79"
+                          height="79"
+                          class="img-fluid"
+                          src="./assets/images/home-page/icons/van-icons.svg"
+                          alt="van icon"
+                        />
+                      </div>
+                      <div class="slider-text bgclr-transparent">
+                        <h3
+                          class="text-clr-black fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                        >
+                          Free Shipping
+                        </h3>
+                        <p
+                          class="text-clr-black fw-300 fs-xs-12 lh-xs-18 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 m-0 p-0"
+                        >
+                          Same business day shipping, on all orders received
+                          before 2:30 PM EST
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="slider-content d-flex flex-column gap-2 gap-lg-3 justify-content-center bgclr-aircraft-white rounded-4 p-3 text-center align-items-center"
+                    >
+                      <div class="slider-icon">
+                        <img
+                          width="79"
+                          height="79"
+                          class="img-fluid"
+                          src="./assets/images/home-page/icons/van-icons.svg"
+                          alt="van icon"
+                        />
+                      </div>
+                      <div class="slider-text bgclr-transparent">
+                        <h3
+                          class="text-clr-black fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                        >
+                          Free Shipping
+                        </h3>
+                        <p
+                          class="text-clr-black fw-300 fs-xs-12 lh-xs-18 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 m-0 p-0"
+                        >
+                          Same business day shipping, on all orders received
+                          before 2:30 PM EST
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="slider-content d-flex flex-column gap-2 gap-lg-3 justify-content-center bgclr-aircraft-white rounded-4 p-3 text-center align-items-center"
+                    >
+                      <div class="slider-icon">
+                        <img
+                          width="79"
+                          height="79"
+                          class="img-fluid"
+                          src="./assets/images/home-page/icons/van-icons.svg"
+                          alt="van icon"
+                        />
+                      </div>
+                      <div class="slider-text bgclr-transparent">
+                        <h3
+                          class="text-clr-black fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                        >
+                          Free Shipping
+                        </h3>
+                        <p
+                          class="text-clr-black fw-300 fs-xs-12 lh-xs-18 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 m-0 p-0"
+                        >
+                          Same business day shipping, on all orders received
+                          before 2:30 PM EST
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="slider-content d-flex flex-column gap-2 gap-lg-3 justify-content-center bgclr-aircraft-white rounded-4 p-3 text-center align-items-center"
+                    >
+                      <div class="slider-icon">
+                        <img
+                          width="79"
+                          height="79"
+                          class="img-fluid"
+                          src="./assets/images/home-page/icons/van-icons.svg"
+                          alt="van icon"
+                        />
+                      </div>
+                      <div class="slider-text bgclr-transparent">
+                        <h3
+                          class="text-clr-black fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                        >
+                          Free Shipping
+                        </h3>
+                        <p
+                          class="text-clr-black fw-300 fs-xs-12 lh-xs-18 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 m-0 p-0"
+                        >
+                          Same business day shipping, on all orders received
+                          before 2:30 PM EST
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="slider-content d-flex flex-column gap-2 gap-lg-3 justify-content-center bgclr-aircraft-white rounded-4 p-3 text-center align-items-center"
+                    >
+                      <div class="slider-icon">
+                        <img
+                          width="79"
+                          height="79"
+                          class="img-fluid"
+                          src="./assets/images/home-page/icons/van-icons.svg"
+                          alt="van icon"
+                        />
+                      </div>
+                      <div class="slider-text bgclr-transparent">
+                        <h3
+                          class="text-clr-black fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                        >
+                          Free Shipping
+                        </h3>
+                        <p
+                          class="text-clr-black fw-300 fs-xs-12 lh-xs-18 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 m-0 p-0"
+                        >
+                          Same business day shipping, on all orders received
+                          before 2:30 PM EST
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- shipping and Warranty section end -->
+
+      <!-- newsletter subcsription section -->
+      <section class="subscription-section bgclr-black pt-20 pb-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-md-center pb-8">
+              <h2
+                class="text-clr-white fw-500 fs-xs-16 lh-xs-24 fs-tablet-10 lh-tablet-14 fs-pc-16 lh-pc-24 m-0 p-0"
+              >
+                Be First To Know
+              </h2>
+              <h3
+                class="text-clr-gold fw-600 fs-xs-20 lh-xs-30 fs-tablet-12 lh-tablet-17 fs-pc-16 lh-pc-24 m-0 p-0"
+              >
+                Stay Tuned for Under-the-Hood Deals
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="subscription-form">
+                <form action="">
+                  <div
+                    class="d-flex gap-2 align-items-center justify-content-md-center"
+                  >
+                    <div class="position-relative">
+                      <span
+                        ><img
+                          width="20"
+                          height="16"
+                          class="img-fluid position-absolute top-0 start-0 mt-12 ms-3"
+                          src="./assets/images/home-page/icons/email-icons.svg"
+                          alt="email icons"
+                      /></span>
+                      <input
+                        type="email"
+                        class="form-control w-100 pt-8 pb-8 ps-5 text-clr-black rounded"
+                        placeholder="Your email"
+                        aria-label="Your email"
+                        aria-describedby="subscribe button"
+                      />
+                    </div>
+                    <button
+                      class="btn bgclr-teal text-white fw-500 fs-xs-14 lh-xs-21 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24 rounded btn-submit ps-lg-4 pe-lg-4 align-self-stretch"
+                      type="submit"
+                      id="subscribe button"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <section class="footer-links-section bgclr-teal pt-20">
+        <!-- footer links section ( desktop, tablet ) -->
+        <div class="container d-none d-md-block">
+          <div class="row gy-4">
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Get in Touch
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/material-symbols_chat-outline.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Chat with us
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/phone-icons.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Phone
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/email-footer-icon.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Email
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/help-line-icons.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Help guide
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/feedback-icon.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Feedback
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Popular Makes
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <div class="d-flex flex-column gap-3">
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Customer Service
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <div class="d-flex flex-column gap-3">
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Information
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <div class="d-flex flex-column gap-3">
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer links accordion section ( mobile ) -->
+        <div class="container d-md-none">
+          <div class="row">
+            <div class="col-12">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Get in Touch
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-column gap-3">
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/material-symbols_chat-outline.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Chat with us
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/phone-icons.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Phone
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/email-footer-icon.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Email
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/help-line-icons.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Help guide
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/feedback-icon.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Feedback
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Popular Makes
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="d-flex flex-column gap-3">
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Customer Service
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="d-flex flex-column gap-3">
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour"
+                      aria-expanded="false"
+                      aria-controls="collapsefour"
+                    >
+                      Information
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="d-flex flex-column gap-3">
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer social links section -->
+        <div class="container">
+          <div
+            class="row gy-4 gy-xl-0 flex-column flex-lg-row py-3 border-top border-bottom border-secondary-subtle mt-20"
+          >
+            <div
+              class="col-12 col-xl-4 d-flex flex-column align-items-center align-items-xl-start gap-3"
+            >
+              <h4
+                class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+              >
+                Follow us on
+              </h4>
+              <div
+                class="d-flex gap-4 align-items-center justify-content-start"
+              >
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_facebook.svg"
+                    alt=" facebook "
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/skill-icons_instagram.svg"
+                    alt="instagram"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_youtube-icon.svg"
+                    alt="youtube"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/prime_twitter.svg"
+                    alt="twitter"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-12 offset-xl-3 col-xl-5 d-flex flex-column align-items-center align-items-xl-start gap-3"
+            >
+              <h4
+                class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+              >
+                We Accept
+              </h4>
+              <div
+                class="d-flex gap-4 align-items-center justify-content-start"
+              >
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt=" facebook "
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="instagram"
+                /></a>
+
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer copy right -->
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p
+                class="text-clr-white-70 fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+              >
+                Copyright &copy; 2022 - 2024 Westar.com. All Rights Reserved.
+                <a class="text-reset text-decoration-underline" href="./#"
+                  >California Supply Chain Disclosure Privacy Policy</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- home js file (local Dir) -->
+    <script src="./assets/js/home.js"></script>
+    <!-- bootstrap js file (from local Dir) -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper slider js file (from local) -->
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <!-- cdn link (for global usage) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script> -->
+
+    <script>
+      // slider third
+      const swiper3 = new Swiper(".whatToExpectSlider", {
+        // Optional parameters
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: false,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
+        breakpoints: {
+          // Responsive breakpoints
+          320: {
+            slidesPerView: 2,
+            centeredSlides: true,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+
+        // If we need pagination
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+    </script>
+  </body>
+</html>

@@ -1,5 +1,6 @@
 // Define custom font size variables for mobile breakpoint
 $mobile-font-sizes: (
+  "8": 8px,
   "10": 10px,
   "12": 12px,
   "14": 14px,
@@ -55,6 +56,7 @@ $tablet-font-sizes: (
 
 $pc-font-sizes: (
   "12": 12px,
+  "13": 13px,
   "14": 14px,
   "16": 16px,
   "20": 20px,
@@ -83,6 +85,7 @@ $pc-font-sizes: (
 
 // Define custom font size variables for mobile breakpoint
 $mobile-line-height: (
+  "12": 12px,
   "15": 15px,
   "18": 18px,
   "21": 21px,
@@ -138,6 +141,7 @@ $tablet-line-height: (
 
 $pc-line-height: (
   "18": 18px,
+  "20": 20px,
   "24": 24px,
   "21": 21px,
   "30": 30px,
