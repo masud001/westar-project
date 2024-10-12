@@ -1,0 +1,118 @@
+
+
+
+
+.single-blog{ 
+    --blog-image-01: url("../images/blog-page/blog-image-01.webp");
+    --blog-image-02: url("../images/blog-page/blog-image-01.webp");
+    --blog-image-03: url("../images/blog-page/blog-image-01.webp");
+    width: 100%;
+    height: 150px;
+
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-end;
+    @extend .align-items-start;
+    @extend .p-2;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    border-radius: 5px;
+    &.blog-image-01{
+        background:linear-gradient(0deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), 
+        var(--blog-image-01);
+    }
+    &.blog-image-02{
+        background:linear-gradient(0deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), 
+        var(--blog-image-02); 
+    }
+    &.blog-image-03{
+        background:linear-gradient(0deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), 
+        var(--blog-image-03); 
+    }
+    @media (min-width: 320px) {
+        
+        height: 87px;
+    }
+    @media (min-width: 768px) {
+        
+        height: 86px;
+    }
+    @media (min-width: 1440px) {
+        
+        height: 150px;
+    }
+}
+
+.blog-paragraph{
+    @include blog-content-style-group;
+    margin-bottom: 15px !important;
+}
+.blog-pragraph-title{
+    @include blog-pragraph-title-style-group;
+}
+.single-blog-time{
+    @include single-blog-time;
+}
+.single-blog-title{
+    @include single-blog-title;
+}
+.product-card{
+    width: 100%;
+    height: 100%;
+    @media (min-width: 320px) {
+        width: 128px;
+        height: auto;
+    }
+    @media (min-width: 768px) {
+        width: 127px;
+        height: auto;
+    }
+    @media (min-width: 1440px) {
+        width: 220px;
+        height: auto;
+    }
+}
+
+.slider-blog{
+    max-width: 325px;
+    transition: all .3s ease-in-out;
+    box-shadow: $box-shadow-sm !important;
+    &:hover{
+        box-shadow: $box-shadow !important;
+    }
+    .slider-blog-img{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        width: 100%;
+        height: 100%;
+        @media (min-width: 320px) {
+            height: 87px;
+        }
+        @media (min-width: 768px) {
+            height: 86px;
+        }
+        @media (min-width: 1440px) {
+            height: 150px;
+        }
+    }
+    .slider-blog-title{
+        @include slider-blog-title;
+        
+    }
+    .slider-blog-paragraph{
+        @include slider-blog-paragraph;
+        
+    }
+    .slider-blog-tag{
+        @include slider-blog-tag;
+        padding: 4px 8px !important;
+        right: 10px !important;
+        bottom: 6px !important;
+        
+    }
+}

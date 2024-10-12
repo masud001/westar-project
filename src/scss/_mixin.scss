@@ -46,3 +46,99 @@ $default-accordion-button-active-bg: #007bff;
         }
     }
 }
+
+// blog page mixin 
+@mixin blog-content-style-group{
+    @extend .text-clr-black; 
+    @extend .fw-300;
+    @extend .fs-xs-12; 
+    @extend .lh-xs-18; 
+    @extend .fs-tablet-8;
+    @extend .lh-tablet-12;
+    @extend .fs-pc-14;
+    @extend .lh-pc-20; 
+    @extend .p-0;
+    @extend .m-0;
+}
+@mixin blog-pragraph-title-style-group{
+    @extend .text-clr-black; 
+    @extend .fw-500;
+    @extend .fs-xs-16; 
+    @extend .lh-xs-24; 
+    @extend .fs-tablet-9;
+    @extend .lh-tablet-12;
+    @extend .fs-pc-16;
+    @extend .lh-pc-24; 
+    @extend .py-2;
+    @extend .m-0;
+}
+
+@mixin single-blog-time{
+    // p-0 m-0 fw-500 text-clr-white fs-xs-12 lh-xs-18 fs-tablet-7 lh-tablet-10 fs-pc-12 lh-pc-18
+    @extend .text-clr-white; 
+    @extend .fw-500;
+    @extend .fs-xs-12; 
+    @extend .lh-xs-18; 
+    @extend .fs-tablet-7;
+    @extend .lh-tablet-10;
+    @extend .fs-pc-12;
+    @extend .lh-pc-28; 
+    @extend .p-0;
+    @extend .m-0;
+        
+}
+@mixin single-blog-title{
+    @extend .text-clr-white; 
+    @extend .fw-500;
+    @extend .fs-xs-12; 
+    @extend .lh-xs-18; 
+    @extend .fs-tablet-8;
+    @extend .lh-tablet-12;
+    @extend .fs-pc-14;
+    @extend .lh-pc-20; 
+    @extend .p-1;
+    @extend .m-0;
+
+}
+@mixin slider-blog-title{
+    @extend .text-clr-black;
+    @extend .text-reset;
+    @extend .text-decoration-none;
+    @extend .fw-500;
+    @extend .fs-xs-10; 
+    @extend .lh-xs-15; 
+    @extend .fs-tablet-9;
+    @extend .lh-tablet-12;
+    @extend .fs-pc-16;
+    @extend .lh-pc-20; 
+    @extend .p-0;
+    @extend .m-0;
+}
+@mixin slider-blog-paragraph{
+    @extend .text-clr-black;
+    @extend .fw-300;
+    @extend .fs-xs-10; 
+    @extend .lh-xs-15; 
+    @extend .fs-tablet-7;
+    @extend .lh-tablet-10;
+    @extend .fs-pc-12;
+    @extend .lh-pc-18; 
+    @extend .p-0;
+    @extend .m-0;
+}
+@mixin slider-blog-tag{
+    
+    @extend .rounded-1;
+    @extend .bgclr-teal;
+    @extend .fw-400; 
+    @extend .fs-xs-10; 
+    @extend .lh-xs-15; 
+    @extend .fs-tablet-7;
+    @extend .lh-tablet-10;
+    @extend .fs-pc-10;
+    @extend .lh-pc-18; 
+    @extend .text-clr-white; 
+    @extend .text-capitalize; 
+    @extend .p-0;
+    @extend .m-0;
+}

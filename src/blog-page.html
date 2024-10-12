@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- swiper slider css file (from local Dir) -->
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+    <!-- swiper slider css file (from cdn) -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Westar Blog page</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- header top  -->
+      <section
+        aria-labelledby="header-top"
+        class="header-top d-flex align-items-center justify-content-center gap-2 bgclr-gold pt-12 pb-12"
+      >
+        <img
+          src="./assets/images/home-page/icons/vehicale-icon.svg"
+          alt="vehicale-icon"
+          class="img-fluid"
+          width="14px"
+          height="13px"
+        />
+        <p
+          class="text-center fs-xs-12 fs-mobile-12 fs-tablet-9 fs-pc-16 lh-xs-18 lh-tablet-14 lh-pc-24 fw-500 m-0 p-0 text-clr-black"
+        >
+          Free Shipping On All Orders Above $35
+        </p>
+      </section>
+      <!-- header nnavigations  -->
+      <header
+        class="header-section bgclr-teal text-white"
+        aria-labelledby="header"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="d-flex align-items-center justify-content-md-between gap-3 gap-md-0"
+              >
+                <!-- navigations  -->
+                <div class="order-2 order-md-0 d-flex align-items-center">
+                  <button
+                    class="btn p-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebar-navigation"
+                    aria-controls="sidebar-navigation"
+                  >
+                    <img
+                      src="./assets/images/home-page/icons/nav-icon.svg"
+                      class="img-fluid"
+                      width="25.5px"
+                      height="22.7px"
+                      alt="mobile navigation icon"
+                    />
+                  </button>
+                  <div
+                    class="p-0 ps-md-2 ps-lg-5 d-none d-md-flex align-items-center gap-2"
+                  >
+                    <img
+                      src="./assets/images/home-page/icons/map-locator-icon.svg"
+                      class="img-fluid"
+                      width="24px"
+                      height="24px"
+                      alt="map map-locator-icon"
+                    />
+                    <p
+                      class="m-0 p-0 fw-400 fs-pc-16 lh-pc-24 fs-tablet-9 lh-tablet-14 text-clr-white"
+                    >
+                      Hello Select Address
+                    </p>
+                  </div>
+                </div>
+                <!-- logo  -->
+                <div
+                  class="comapy-logo order-0 order-md-1 p-0 pe-md-5 me-auto me-md-0"
+                >
+                  <a href="/#">
+                    <img
+                      src="./assets/images/logo/westar-header-logo-yellow.svg"
+                      alt="westat-logo-yellow"
+                      class="img-fluid"
+                      width="153px"
+                      height="40px"
+                    />
+                  </a>
+                </div>
+                <div class="d-md-none">
+                  <button class="p-0 btn">
+                    <img
+                      width="24px"
+                      height="24px"
+                      class="img-fluid"
+                      src="./assets/images/home-page/icons/car-icons.svg"
+                      alt="car-icons"
+                    />
+                  </button>
+                </div>
+                <!-- cart  -->
+                <div class="order-1 d-flex align-items-center">
+                  <a
+                    href="/#"
+                    class="d-none d-md-flex text-decoration-underline text-reset fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24 p-0 pe-md-2 pe-lg-5"
+                    >Track Order</a
+                  >
+                  <button class="btn p-0">
+                    <img
+                      src="./assets/images/home-page/icons/header-cart-icon.svg"
+                      alt=" cart icon"
+                      class="img-fluid"
+                      width="34px"
+                      height="34px"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- mobile navigations (sidebar) start -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="sidebar-navigation"
+        aria-labelledby="sidebar-navigation-label"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div
+          class="offcanvas-body d-flex flex-column justify-content-between h-100"
+        >
+          <div class="">
+            <div class="d-flex justify-content-between align-items-center">
+              <span
+                ><img
+                  width="24"
+                  height="34"
+                  class="img-fluid"
+                  src="./assets/images/home-page/icons/sidebar-home-icon.svg"
+                  alt="sidebar home icon"
+              /></span>
+              <a
+                href="/#"
+                class="text-reset text-decoration-none m-0 p-0 fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+              >
+                Hello Select Address
+                <span
+                  ><img
+                    width="24"
+                    height="34"
+                    class="img-fluid ms-2"
+                    src="./assets/images/home-page/icons/sidebar-map-locator-icon.svg"
+                    alt=" sidebar map locator icon"
+                /></span>
+              </a>
+            </div>
+            <!-- sidebar links  -->
+            <div class="">
+              <div
+                class="d-flex gap-3 justify-content-start align-items-center py-3 border-bottom border-secondary-subtle"
+              >
+                <span
+                  ><img
+                    class="img-fluid"
+                    width="24"
+                    height="24"
+                    src="./assets/images/home-page/icons/sidebar-chat-icon.svg"
+                    alt=" sidebar chat icon"
+                /></span>
+                <a
+                  href="/"
+                  class="text-reset text-decoration-none m-0 p-0 fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                  >Live Chat</a
+                >
+              </div>
+              <div
+                class="d-flex gap-3 justify-content-start align-items-center py-3 border-bottom border-secondary-subtle"
+              >
+                <span
+                  ><img
+                    class="img-fluid"
+                    width="24"
+                    height="24"
+                    src="./assets/images/home-page/icons/sidebar-phone-icon.svg"
+                    alt=" sidebar chat icon"
+                /></span>
+                <a
+                  href="/"
+                  class="text-reset text-decoration-none m-0 p-0 fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                  >+1 888 374 5088</a
+                >
+              </div>
+              <div
+                class="d-flex gap-3 justify-content-start align-items-center py-3 border-bottom border-secondary-subtle"
+              >
+                <span
+                  ><img
+                    class="img-fluid"
+                    width="24"
+                    height="24"
+                    src="./assets/images/home-page/icons/sidebar-file-icon.svg"
+                    alt=" sidebar chat icon"
+                /></span>
+                <a
+                  href="/"
+                  class="text-reset text-decoration-none m-0 p-0 fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                  >Track Order</a
+                >
+              </div>
+              <div
+                class="d-flex gap-3 justify-content-start align-items-center py-3 border-bottom border-secondary-subtle"
+              >
+                <span
+                  ><img
+                    class="img-fluid"
+                    width="24"
+                    height="24"
+                    src="./assets/images/home-page/icons/sidebar-file-icon.svg"
+                    alt=" sidebar chat icon"
+                /></span>
+                <a
+                  href="/"
+                  class="text-reset text-decoration-none m-0 p-0 fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                  >My Account</a
+                >
+              </div>
+            </div>
+            <!-- sidebar categories -->
+            <div class="py-4">
+              <ul class="main-list m-0 p-0">
+                <li class="list-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-600 fs-pc-20 lh-pc-30 text-clr-black">
+                      Categories 1</span
+                    >
+                    <span class="icon">+</span>
+                  </div>
+                  <ul class="sublist">
+                    <li><span>Sublist 1-1</span></li>
+                    <li><span>Sublist 1-1</span></li>
+                    <li><span>Sublist 1-1</span></li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-600 fs-pc-20 lh-pc-30 text-clr-black">
+                      Categories 2</span
+                    >
+                    <span class="icon">+</span>
+                  </div>
+                  <ul class="sublist">
+                    <li><span>Sublist 1-1</span></li>
+                    <li><span>Sublist 1-1</span></li>
+                    <li><span>Sublist 1-1</span></li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-600 fs-pc-20 lh-pc-30 text-clr-black">
+                      Categories 3</span
+                    >
+                    <span class="icon">+</span>
+                  </div>
+                  <ul class="sublist">
+                    <li><span>Sublist 1-1</span></li>
+                    <li><span>Sublist 1-1</span></li>
+                    <li><span>Sublist 1-1</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-auto">
+            <div class="d-flex justify-content-between align-items-center py-3">
+              <div
+                class="d-flex gap-3 justify-content-start align-items-center"
+              >
+                <span class="flex-shrink-0"
+                  ><img
+                    class="img-fluid rounded-circle flex-shrink-0"
+                    width="24"
+                    height="24"
+                    src="./assets/images/home-page/icons/circle-flags_us.svg"
+                    alt=" sidebar chat icon"
+                /></span>
+                <a
+                  href="/"
+                  class="text-reset text-decoration-none m-0 p-0 fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                  >United States</a
+                >
+              </div>
+              <div class="d-flex gap-3">
+                <span
+                  class="text-uppercase fw-400 fs-pc-16 lh-pc-24 fw-500 text-clr-black"
+                  >usd</span
+                >
+                <span
+                  ><img
+                    width="8px"
+                    height="8px"
+                    class="img-fluid"
+                    src="./assets/images/home-page/icons/sidebar-angle-icon.svg"
+                    alt=""
+                /></span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="d-flex py-3 align-items-center justify-content-around">
+            <div class="d-flex flex-column align-items-center gap-3">
+              <img
+                width="24"
+                height="24"
+                class="img-fluid"
+                src="./assets/images/home-page/icons/sidebar-phone-icon.svg"
+                alt="icons"
+              />
+              <a
+                href="tel:+1 888 374 5088"
+                class="text-decoration-none text-reset fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                >About us</a
+              >
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3">
+              <img
+                width="24"
+                height="24"
+                class="img-fluid"
+                src="./assets/images/home-page/icons/sidebar-phone-icon.svg"
+                alt="icons"
+              />
+              <a
+                href="tel:+1 888 374 5088"
+                class="text-decoration-none text-reset fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                >Blog</a
+              >
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3">
+              <img
+                width="24"
+                height="24"
+                class="img-fluid"
+                src="./assets/images/home-page/icons/sidebar-phone-icon.svg"
+                alt="icons"
+              />
+              <a
+                href="tel:+1 888 374 5088"
+                class="text-decoration-none text-reset fw-400 fs-pc-16 lh-pc-24 text-clr-black"
+                >Help Centre</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-backdrop visually-hidden fade show"></div>
+      <!-- mobile navigations (sidebar) end-->
+
+      <!-- page breadcrumb   -->
+      <section class="py-2 py-lg-3 bgclr-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="page-breadcrumb" aria-label="breadcrumb">
+                <ul class="m-0 d-flex align-items-center">
+                  <li class="">
+                    <a
+                      class="text-reset fw-300 text-decoration-none fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="text-reset fw-300 text-decoration-none fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                      href="#"
+                      >Interior</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="text-reset fw-300 text-decoration-none fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                      href="#"
+                      >Switches & Control
+                    </a>
+                  </li>
+                  <li
+                    class="text-clr-black fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                    aria-current="page"
+                  >
+                    Windows Switch
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page breadcrumb  end -->
+
+      <!-- blog section start -->
+      <div class="blog-section">
+        <div class="container">
+          <!-- title  -->
+          <div class="row py-3">
+            <div class="col-12 col-md-8">
+              <h4
+                class="fw-500 text-clr-black fs-xs-16 lh-xs-24 fs-tablet-14 lh-tablet-20 fs-pc-24 lh-pc-30 m-0 p-0"
+              >
+                Window Regulator Repair Cost: What to Know
+              </h4>
+              <div class="d-flex gap-2 align-items-center">
+                <span
+                  class="fw-300 me-2 text-clr-black fs-xs-12 lh-xs-18 fs-tablet-7 lh-tablet-10 fs-pc-12 lh-pc-18 m-0 p-0"
+                >
+                  August 31st, 2022
+                </span>
+
+                <span
+                  ><a href="./"
+                    ><img
+                      width="24"
+                      height="24"
+                      src="./assets/images/cart-page/icons/facebook-icons.svg"
+                      alt="facebook icons" /></a
+                ></span>
+                <span
+                  ><a href="./"
+                    ><img
+                      width="34"
+                      height="24"
+                      src="./assets/images/cart-page/icons/youtube-icons.svg"
+                      alt="youtube icons" /></a
+                ></span>
+              </div>
+            </div>
+          </div>
+          <!-- content  -->
+          <div class="row py-3">
+            <div class="col-12 col-md-8 col-lg-8">
+              <div class="w-100 rounded-1">
+                <img
+                  class="img-fluid rounded-1"
+                  width="900"
+                  height="477"
+                  src="./assets/images/blog-page/blog-thumb.webp"
+                  alt="blog thumb"
+                />
+              </div>
+            </div>
+            <div class="col-12 d-none d-md-inline-block col-md-4 col-lg-4">
+              <div
+                class="d-flex flex-column gap-2 rounded-2 border border-clr-black-20 p-3"
+              >
+                <!-- single blog  -->
+                <div class="single-blog blog-image-01">
+                  <p class="single-blog-time">August 31st, 2022</p>
+                  <h4
+                    class="p-0 m-0 fw-500 text-clr-white fs-xs-12 lh-xs-18 fs-tablet-8 lh-tablet-12 fs-pc-14 lh-pc-20"
+                  >
+                    Window Regulator Repair Cost: What to Know
+                  </h4>
+                </div>
+                <!-- single blog  -->
+                <div class="single-blog blog-image-02">
+                  <p
+                    class="p-0 m-0 fw-500 text-clr-white fs-xs-12 lh-xs-18 fs-tablet-7 lh-tablet-10 fs-pc-12 lh-pc-18"
+                  >
+                    August 31st, 2022
+                  </p>
+                  <h4
+                    class="p-0 m-0 fw-500 text-clr-white fs-xs-12 lh-xs-18 fs-tablet-8 lh-tablet-12 fs-pc-14 lh-pc-20"
+                  >
+                    Window Regulator Repair Cost: What to Know
+                  </h4>
+                </div>
+                <!-- single blog  -->
+                <div class="single-blog blog-image-03">
+                  <p
+                    class="p-0 m-0 fw-500 text-clr-white fs-xs-12 lh-xs-18 fs-tablet-7 lh-tablet-10 fs-pc-12 lh-pc-18"
+                  >
+                    August 31st, 2022
+                  </p>
+                  <h4
+                    class="p-0 m-0 fw-500 text-clr-white fs-xs-12 lh-xs-18 fs-tablet-8 lh-tablet-12 fs-pc-14 lh-pc-20"
+                  >
+                    Window Regulator Repair Cost: What to Know
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content  -->
+          <div class="row">
+            <div class="col-12">
+              <div class="w-100 blog-content">
+                <p class="blog-paragraph">
+                  Operating a car is a complex process that often requires
+                  practice and training. However, not all car elements are hard
+                  to operate. For instance, the windows are the easiest car
+                  components to operate.
+                </p>
+                <p class="blog-paragraph">
+                  Operating a car is a complex process that often requires
+                  practice and training. However, not all car elements are hard
+                  to operate. For instance, the windows are the easiest car
+                  components to operate. Therefore, anyone, even kids, can open
+                  and close car windows if they know the right button or knob to
+                  work. The mechanism for opening and closing your car windows
+                  may differ depending on the model and year of manufacture.
+                  Regardless, the basics are the same.
+                </p>
+                <p class="blog-paragraph">
+                  Most people hardly think of how care windows go up and down
+                  because all you need is to push a button. However, the process
+                  is more complicated than meets the eyes. Car windows use a
+                  mechanism called a window regulator. However, you may not
+                  notice that this element exists until your car windows
+                  misbehave. For instance, your windows may get jammed or refuse
+                  to open all the way or at all. This usually happens if your
+                  car window regulator is broken or damaged. Therefore, the
+                  right thing to do is repair the regulator. When you encounter
+                  this issue, perhaps the first thing to come to your mind is
+                  the window regulator repair cost.
+                </p>
+                <div class="">
+                  <img
+                    class="img-fluid rounded-2"
+                    width="1360"
+                    height="477"
+                    src="./assets/images/blog-page/blog-thumb-02.webp"
+                    alt="blog thumb"
+                  />
+                </div>
+                <h5 class="blog-pragraph-title">
+                  What you need to know about window regulator repair cost
+                </h5>
+                <p class="blog-paragraph">
+                  Before getting into the specifics of car window regulator
+                  costs, discussing the basics of this vehicle component would
+                  be wise. Therefore, a car window regulator is an apparatus
+                  that allows your car window to slide up and down. The device
+                  is usually hidden inside the car door behind its inside panel.
+                  Additionally, they are typically positioned directly under the
+                  window for easy performance. Therefore, you may not even know
+                  how it looks unless you have worked on cars. Each door on your
+                  vehicle has an independent window regulator. Additionally, a
+                  car window regulator usually has a motor that allows
+                  performance.
+                </p>
+                <p class="blog-paragraph">
+                  Car window regulators are simple and reliable; you do not need
+                  to maintain them as long as they work correctly. However, as
+                  simple as they are, they are vital components. For instance,
+                  if your car window regulator is damaged, you may be unable to
+                  open or close your windows. It is important to note that your
+                  car’s windows are a vital security element. Therefore, if you
+                  cannot operate the windows effectively, your car and property
+                  are vulnerable to security issues, like theft. The good thing
+                  is that you can replace your regulator and get your windows
+                  back and running.
+                </p>
+                <h5 class="blog-pragraph-title">Suggested A-Premium Parts</h5>
+                <div
+                  class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                >
+                  <div class="">
+                    <img
+                      class="img-fluid"
+                      width="142"
+                      height="118"
+                      src="./assets/images/blog-page/product-image01.jpg"
+                      alt="product thumb"
+                    />
+                  </div>
+                  <a
+                    href="./#"
+                    class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                    >Window Switch</a
+                  >
+
+                  <a
+                    class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                    href="./#"
+                    >Buy Now</a
+                  >
+                </div>
+                <h5 class="blog-pragraph-title">
+                  1. How much does a car window regulator repair cost?
+                </h5>
+                <p class="blog-paragraph">
+                  There is no fixed price for repairing a car window regulator
+                  because various elements determine the cost. Some of these
+                  elements are;
+                </p>
+                <p class="blog-paragraph">
+                  Types of car window regulator The type is one of the primary
+                  factors influencing the regulator repair costs. There are
+                  typically two types of car window regulators in most vehicles;
+                </p>
+                <p class="blog-paragraph">
+                  Scissor/gear type. This car window regulator is commonly found
+                  in old vehicle models. It is mostly made of metal and heavy.
+                  Additionally, it contains two intersecting metal arms that
+                  control the upward and downward motion of the car window.
+                  Furthermore, powered window cranks power scissor-type
+                  regulators. However, some models have motors. Cable-type. This
+                  car window regulator is found in modern vehicle models and is
+                  lighter. It uses a metal crank and cable to work the windows.
+                  Additionally, the cables are attached to a drive mechanism,
+                  and a motor powers the regulator. Cable-type car window
+                  regulators are easier to repair and hence cheaper than the
+                  latter. Car model
+                  <br />
+                  Another element that affects the cost of repairing a car
+                  window regulator is the car model. Typically, the cost differs
+                  depending on which year your car was made and the model. Older
+                  car models may be harder to repair than new ones because of
+                  the availability of their repair parts. For instance, window
+                  regulators for Ford Mustang (classic models) can be heavier
+                  and metallic. These regulators are harder to acquire and
+                  handle. Therefore, they make the repair process more
+                  challenging and expensive.
+                </p>
+                <p class="blog-paragraph">
+                  On the other hand, modern or earlier car models are easier to
+                  repair because their parts are readily available. In addition,
+                  as mentioned, modern vehicle models use lighter cable-type car
+                  window regulators that are easier to handle and replace.
+                </p>
+                <p class="blog-paragraph">
+                  The severity of the issue <br />
+                  The severity of the problem with the car window regulator will
+                  also influence the repair costs. For instance, if the problem
+                  is as simple as the window being jammed or not moving entirely
+                  up or down, it will cost less to repair. Normally, the source
+                  of the problem may be as simple as a loose cable. However,
+                  severe issues like the window dropping inside the door may
+                  require higher repair costs. In such cases, the window may
+                  damage other elements, like the cables and wires inside the
+                  door panel. Additionally, you may incur extra charges for
+                  replacing the window if it breaks during the drop.
+                </p>
+                <p class="blog-paragraph">
+                  Whether you choose to hire a mechanic or DIY <br />
+                  Repairing a window regulator is a simple task that you can do
+                  without the help of a mechanic. However, this only applies if
+                  you have experience handling vehicles and know how to locate
+                  the regulator. Therefore, with the right experience, you can
+                  repair your car window regulator by following the steps below;
+                </p>
+                <p class="blog-paragraph">
+                  Troubleshoot the problem based on the symptoms presented
+                  <br />
+                  Remove the inside door panel <br />
+                  Disconnect the window from the regulator and its motor <br />
+                  Remove the regulator and the motor <br />
+                  Repair the regulator <br />
+                  Test if the window functions properly <br />
+                  Reinstall the window and the panel <br />
+                  DIY window regulator repair requires precise procedures and
+                  steps. Therefore, any mistake may cause more damage to your
+                  vehicle and the components on its door. You can prevent this
+                  by using a manual. However, DIY procedures are cheaper because
+                  you only need the right tools, experience, and a replacement
+                  part. Additionally, you need not incur labor costs. On the
+                  other hand, getting the services of a mechanic is slightly
+                  more expensive.
+                </p>
+                <h5 class="blog-pragraph-title">
+                  2. How long do you need to wait before repairing your window
+                  regulator
+                </h5>
+                <p class="blog-paragraph">
+                  There is no fixed amount of time you can wait to repair your
+                  car’s window regulator. Instead, it all depends on its
+                  performance. Additionally, longevity will depend on the
+                  quality of your car and its construction. Furthermore, the
+                  frequency you put your windows up or down will determine how
+                  long the regulator lasts. For instance, frequent window
+                  operation may quicken the regulator’s wear and tear. Finally,
+                  since the issue is not as black or white as you may assume,
+                  the best way to tell if you need to repair the component is by
+                  looking out for signs and symptoms of damage.
+                </p>
+                <div class="py-4">
+                  <h5 class="blog-pragraph-title">Suggested A-Premium Parts</h5>
+                  <!-- Slider main container -->
+                  <div class="swiper aPremiumSuggestedProductSlider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="product-card border border-clr-black-20 p-3 rounded-1 d-flex flex-column align-items-center gap-3"
+                        >
+                          <div class="">
+                            <img
+                              class="img-fluid"
+                              width="142"
+                              height="118"
+                              src="./assets/images/blog-page/product-image01.jpg"
+                              alt="product thumb"
+                            />
+                          </div>
+                          <a
+                            href="./#"
+                            class="text-clr-black-70 text-decoration-none fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            >Window Switch</a
+                          >
+
+                          <a
+                            class="btn w-100 rounded-1 py-2 bgclr-gold text-clr-black fw-400 fs-xs-10 lh-xs-14 fs-tablet-11 lh-tablet-14 fs-pc-17 lh-pc-20 m-0 p-0 text-reset"
+                            href="./#"
+                            >Buy Now</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- read more slider  -->
+          <div class="row py-4">
+            <div class="col-12">
+              <h5 class="blog-pragraph-title">Read More</h5>
+              <!-- Slider main container -->
+              <div class="py-4 swiper blogPostSlider">
+                <div class="swiper-wrapper">
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single slider  -->
+                  <div class="swiper-slide">
+                    <div class="slider-blog">
+                      <div class="slider-blog-img position-relative">
+                        <span
+                          class="slider-blog-tag position-absolute end-0 bottom-0"
+                          >Vehicle Regulator</span
+                        >
+                        <img
+                          width="100%"
+                          height="150"
+                          class="img-fluid"
+                          src="./assets/images/blog-page/single-blog-02.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-2 bgclr-white">
+                        <a href="./#" class="slider-blog-title">
+                          Window Regulator Repair Cost: What to Know
+                        </a>
+                        <p class="slider-blog-paragraph">
+                          Operating a car is a complex process that often
+                          requires practice and training.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- newsletter subcsription section -->
+      <section class="subscription-section bgclr-black pt-20 pb-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-md-center pb-8">
+              <h2
+                class="text-clr-white fw-500 fs-xs-16 lh-xs-24 fs-tablet-10 lh-tablet-14 fs-pc-16 lh-pc-24 m-0 p-0"
+              >
+                Be First To Know
+              </h2>
+              <h3
+                class="text-clr-gold fw-600 fs-xs-20 lh-xs-30 fs-tablet-12 lh-tablet-17 fs-pc-16 lh-pc-24 m-0 p-0"
+              >
+                Stay Tuned for Under-the-Hood Deals
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="subscription-form">
+                <form action="">
+                  <div
+                    class="d-flex gap-2 align-items-center justify-content-md-center"
+                  >
+                    <div class="position-relative">
+                      <span
+                        ><img
+                          width="20"
+                          height="16"
+                          class="img-fluid position-absolute top-0 start-0 mt-12 ms-3"
+                          src="./assets/images/home-page/icons/email-icons.svg"
+                          alt="email icons"
+                      /></span>
+                      <input
+                        type="email"
+                        class="form-control w-100 pt-8 pb-8 ps-5 text-clr-black rounded"
+                        placeholder="Your email"
+                        aria-label="Your email"
+                        aria-describedby="subscribe button"
+                      />
+                    </div>
+                    <button
+                      class="btn bgclr-teal text-white fw-500 fs-xs-14 lh-xs-21 fs-tablet-9 lh-tablet-14 fs-pc-16 lh-pc-24 rounded btn-submit ps-lg-4 pe-lg-4 align-self-stretch"
+                      type="submit"
+                      id="subscribe button"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <section class="footer-links-section bgclr-teal pt-20">
+        <!-- footer links section ( desktop, tablet ) -->
+        <div class="container d-none d-md-block">
+          <div class="row gy-4">
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Get in Touch
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/material-symbols_chat-outline.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Chat with us
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/phone-icons.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Phone
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/email-footer-icon.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Email
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/help-line-icons.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Help guide
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <img
+                      width="24"
+                      height="24"
+                      class="img-fluid flex-shrink-0"
+                      src="./assets/images/home-page/icons/feedback-icon.svg"
+                      alt=" chat icons "
+                    />
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Feedback
+                      </h4>
+                      <h5
+                        class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                      >
+                        Support Hours Mon-Sun: 7*24h
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Popular Makes
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <div class="d-flex flex-column gap-3">
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        BMW parts
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Customer Service
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <div class="d-flex flex-column gap-3">
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        Track order
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-3">
+                <h3
+                  class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                >
+                  Information
+                </h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                    <div class="d-flex flex-column gap-3">
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                      <a
+                        href="./#"
+                        class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                      >
+                        About us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer links accordion section ( mobile ) -->
+        <div class="container d-md-none">
+          <div class="row">
+            <div class="col-12">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Get in Touch
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-column gap-3">
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/material-symbols_chat-outline.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Chat with us
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/phone-icons.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Phone
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/email-footer-icon.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Email
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/help-line-icons.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Help guide
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                          <img
+                            width="24"
+                            height="24"
+                            class="img-fluid flex-shrink-0"
+                            src="./assets/images/home-page/icons/feedback-icon.svg"
+                            alt=" chat icons "
+                          />
+                          <div class="d-flex flex-column">
+                            <h4
+                              class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                            >
+                              Feedback
+                            </h4>
+                            <h5
+                              class="text-clr-white-70 fw-400 fs-xs-10 lh-xs-15 fs-pc-12 lh-pc-18 fs-tablet-7 lh-tablet-10 m-0 p-0"
+                            >
+                              Support Hours Mon-Sun: 7*24h
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Popular Makes
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="d-flex flex-column gap-3">
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            BMW parts
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Customer Service
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="d-flex flex-column gap-3">
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            Track order
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="text-clr-white fw-600 fs-xs-16 lh-xs-24 fs-pc-20 lh-pc-30 fs-tablet-12 lh-tablet-17 m-0 p-0"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour"
+                      aria-expanded="false"
+                      aria-controls="collapsefour"
+                    >
+                      Information
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="d-flex flex-column gap-3">
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                          <a
+                            href="./#"
+                            class="text-clr-white text-reset text-decoration-none fw-500 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+                          >
+                            About us
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer social links section -->
+        <div class="container">
+          <div
+            class="row gy-4 gy-xl-0 flex-column flex-lg-row py-3 border-top border-bottom border-secondary-subtle mt-20"
+          >
+            <div
+              class="col-12 col-xl-4 d-flex flex-column align-items-center align-items-xl-start gap-3"
+            >
+              <h4
+                class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+              >
+                Follow us on
+              </h4>
+              <div
+                class="d-flex gap-4 align-items-center justify-content-start"
+              >
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_facebook.svg"
+                    alt=" facebook "
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/skill-icons_instagram.svg"
+                    alt="instagram"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_youtube-icon.svg"
+                    alt="youtube"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/prime_twitter.svg"
+                    alt="twitter"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-12 offset-xl-3 col-xl-5 d-flex flex-column align-items-center align-items-xl-start gap-3"
+            >
+              <h4
+                class="text-clr-white fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+              >
+                We Accept
+              </h4>
+              <div
+                class="d-flex gap-4 align-items-center justify-content-start"
+              >
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt=" facebook "
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="instagram"
+                /></a>
+
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+                <a class="flex-shrink-0" href="./#"
+                  ><img
+                    width="39"
+                    height="39"
+                    class="img-fluid flex-shrink-0"
+                    src="./assets/images/home-page/icons/logos_mastercard.svg"
+                    alt="twitter"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer copy right -->
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p
+                class="text-clr-white-70 fw-400 fs-xs-14 lh-xs-21 fs-pc-16 lh-pc-24 fs-tablet-10 lh-tablet-14 p-0 m-0"
+              >
+                Copyright &copy; 2022 - 2024 Westar.com. All Rights Reserved.
+                <a class="text-reset text-decoration-underline" href="./#"
+                  >California Supply Chain Disclosure Privacy Policy</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- home js file (local Dir) -->
+    <script src="./assets/js/home.js"></script>
+    <!-- bootstrap js file (from local Dir) -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper slider js file (from local) -->
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <!-- cdn link (for global usage) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script> -->
+
+    <script>
+      // to use (init) this slider you have to use this camel case class name in html
+      // slider first
+      const swiper = new Swiper(".aPremiumSuggestedProductSlider", {
+        // Optional parameters
+        // spaceBetween: 60,
+        freeMode: true,
+        loop: true,
+        slidesPerView: 4,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
+        breakpoints: {
+          // Responsive breakpoints
+          320: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 60,
+          },
+        },
+
+        // If we need pagination
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+
+      // slider second
+      const swiper2 = new Swiper(".blogPostSlider", {
+        // Optional parameters
+        // spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        slidesPerView: 4,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
+        breakpoints: {
+          // Responsive breakpoints
+          320: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 60,
+          },
+        },
+
+        // If we need pagination
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+
+      // slider third
+      const swiper3 = new Swiper(".whatToExpectSlider", {
+        // Optional parameters
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: false,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
+        breakpoints: {
+          // Responsive breakpoints
+          320: {
+            slidesPerView: 2,
+            centeredSlides: true,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+
+        // If we need pagination
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+    </script>
+  </body>
+</html>
