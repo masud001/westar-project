@@ -152,15 +152,15 @@
 .whatToExpectSlider{
     .slider-content{
         @media (min-width: 320px) {
-            // width: 223px;
-            height: 197px;
+           
+            height: auto;
         }
         @media (min-width: 768px) {
-            // width: 200;
-            height: 149px;
+            
+           height: auto;
         }
         @media (min-width: 1440px) {
-            // width: 345px;
+            
             height: 259px;
         }
     }

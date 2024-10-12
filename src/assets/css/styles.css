@@ -2325,6 +2325,10 @@ textarea.form-control {
   position: absolute !important;
 }
 
+.d-grid {
+  display: grid !important;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -2335,10 +2339,6 @@ textarea.form-control {
 
 .shadow {
   box-shadow: var(--bs-box-shadow) !important;
-}
-
-.shadow-lg {
-  box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
 .position-relative {
@@ -2397,6 +2397,10 @@ textarea.form-control {
   border-color: var(--bs-secondary-border-subtle) !important;
 }
 
+.w-50 {
+  width: 50% !important;
+}
+
 .w-100 {
   width: 100% !important;
 }
@@ -2419,6 +2423,10 @@ textarea.form-control {
 
 .flex-shrink-1 {
   flex-shrink: 1 !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
 }
 
 .justify-content-start {
@@ -2794,6 +2802,10 @@ textarea.form-control {
 
 .rounded-1 {
   border-radius: var(--bs-border-radius-sm) !important;
+}
+
+.rounded-2 {
+  border-radius: var(--bs-border-radius) !important;
 }
 
 .rounded-3 {
@@ -3192,12 +3204,12 @@ textarea.form-control {
 
 @media (min-width: 320px) {
   .whatToExpectSlider .slider-content {
-    height: 197px;
+    height: auto;
   }
 }
 @media (min-width: 768px) {
   .whatToExpectSlider .slider-content {
-    height: 149px;
+    height: auto;
   }
 }
 @media (min-width: 1440px) {
@@ -4009,12 +4021,13 @@ textarea.form-control {
 }
 
 .payment-card {
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
 }
 .payment-card:hover {
   color: var(--clr-teal);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 @media (min-width: 320px) {
   .payment-card {

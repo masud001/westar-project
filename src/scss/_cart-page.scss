@@ -52,11 +52,12 @@
     }
 }
 .payment-card{
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
     color: rgba($color: #000000, $alpha: 0.50);
     &:hover{
         color: var(--clr-teal);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 .5rem 1rem rgba($black, .15) !important;
     }
     @media (min-width: 320px) {
         width: 128px;
