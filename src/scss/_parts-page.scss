@@ -1,0 +1,16 @@
+
+.slider-title{
+    @extend .text-uppercase;
+    @extend .text-clr-black;
+    @extend .text-reset;
+    @extend .text-decoration-none;
+    @extend .fw-500;
+    @extend .fs-xs-10; 
+    @extend .lh-xs-15; 
+    @extend .fs-tablet-9;
+    @extend .lh-tablet-12;
+    @extend .fs-pc-24;
+    @extend .lh-pc-36; 
+    @extend .p-0;
+    @extend .m-0;
+}
