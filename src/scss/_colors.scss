@@ -15,6 +15,7 @@ $custom-theme-colors: (
   clr-miyazaki-verdant:       $clr-miyazaki-verdant,
   clr-miyazaki-verdant-30:    $clr-miyazaki-verdant-30,
   clr-forest-ride:            $clr-forest-ride,
+  clr-alabaster:              $alabaster,
   
 );
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
