@@ -1,0 +1,262 @@
+
+.parts-page-select-section{
+    label{
+        @extend .position-relative;
+        @extend .text-clr-black;
+        @extend .fw-600;
+        &::after{
+            @extend .position-absolute;
+            @extend .bgclr-black-20;
+            content: "";
+            width: 1px;
+            height: 100%;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    select{
+        border: none !important;
+        &:focus{
+            border: none!important;
+            box-shadow: none !important;
+        }
+    }
+}
+.search-title{
+    @extend .fw-700;
+    @extend .text-clr-white;
+    @extend .fs-xs-16;
+    @extend .lh-xs-24;
+    @extend .fs-pc-32;
+    @extend .lh-pc-48;
+    @extend .fs-tablet-18;
+    @extend .lh-tablet-28;
+}
+.change-link{
+    @extend .fw-400;
+    @extend .text-clr-white;
+    @extend .fs-xs-10;
+    @extend .lh-xs-15;
+    @extend .fs-pc-16;
+    @extend .lh-pc-24;
+    @extend .fs-tablet-9;
+    @extend .lh-tablet-14;
+}
+.product-title{
+    @extend .fw-600;
+    @extend .text-clr-black;
+    @extend .fs-xs-16;
+    @extend .lh-xs-24;
+    @extend .fs-pc-24;
+    @extend .lh-pc-36;
+    @extend .fs-tablet-14;
+    @extend .lh-tablet-21;
+    @extend .m-0;
+    @extend .p-0;
+}
+.search-type{
+    @extend .fw-400;
+    @extend .text-clr-black-80;
+    @extend .fs-xs-12;
+    @extend .lh-xs-18;
+    @extend .fs-pc-16;
+    @extend .lh-pc-24;
+    @extend .fs-tablet-9;
+    @extend .lh-tablet-14;
+    @extend .m-0;
+    @extend .p-0;
+}
+.single-select-tag{
+    input{
+        &:checked + label{
+            @extend .bgclr-gold;
+            @extend .text-clr-black;
+            @extend .border-clr-gold;
+        }
+    }
+    label{
+        @extend .btn;
+        @extend .bgclr-aircraft-white;
+        @extend .text-clr-black-70;
+        @extend .fw-400;
+        @extend .fs-xs-12;
+        @extend .lh-xs-18;
+        @extend .fs-pc-12;
+        @extend .lh-pc-24;
+        @extend .fs-tablet-9;
+        @extend .lh-tablet-14;
+        @extend .border;
+        @extend .border-clr-black-20;
+       
+    }
+}
+.single-product{
+    position: relative;
+    @extend .border;
+    @extend .border-clr-black-20;
+    @media (max-width: 767px) {
+        padding-top: 50px !important;
+        border-left: none !important;
+        border-right: none !important;
+
+    }
+
+    .single-product-title{
+        @media (max-width: 767px) {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            text-decoration: underline;
+        }
+    }
+    .product-thumb{
+        @media (min-width: 320px) {
+            width: 106px;
+            height: 106px;
+        }
+        @media (min-width: 768px) {
+            width: 87px;
+            height: 89px;
+        }
+        @media (min-width: 1200px) {
+            width: 151px;
+            height: 155px;
+        }
+        
+    }
+    h3{
+        @extend .fw-600;
+        @extend .text-clr-black;
+        @extend .fs-xs-16;
+        @extend .lh-xs-24;
+        @extend .fs-pc-26;
+        @extend .lh-pc-24;
+        @extend .fs-tablet-9;
+        @extend .lh-tablet-14;
+        @extend .m-0;
+        @extend .p-0;
+    }
+    h5{
+        @extend .fw-400;
+        @extend .text-clr-black;
+        @extend .fs-xs-10;
+        @extend .lh-xs-15;
+        @extend .fs-pc-12;
+        @extend .lh-pc-28;
+        @extend .fs-tablet-7;
+        @extend .lh-tablet-10;
+        @extend .m-0;
+        @extend .p-0;
+        span{
+            @extend .text-clr-forest-ride;
+            @extend .fw-500;
+        }
+    }
+    p{
+        @extend .fw-300;
+        @extend .text-clr-black;
+        @extend .fs-xs-10;
+        @extend .lh-xs-15;
+        @extend .fs-pc-12;
+        @extend .lh-pc-28;
+        @extend .fs-tablet-7;
+        @extend .lh-tablet-10;
+        @extend .m-0;
+        @extend .p-0;
+    }
+    .price{
+        .current-price{
+            @extend .fw-600;
+            @extend .text-clr-black;
+            @extend .fs-xs-16;
+            @extend .lh-xs-24;
+            @extend .fs-pc-26;
+            @extend .lh-pc-24;
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-14;
+        }
+        .previous-price{
+            @extend .fw-400;
+            @extend .text-clr-black-50;
+            @extend .fs-xs-10;
+            @extend .lh-xs-15;
+            @extend .fs-pc-10;
+            @extend .lh-pc-18;
+            @extend .fs-tablet-6;
+            @extend .lh-tablet-10;
+            @extend .text-decoration-line-through;
+            @extend .align-self-start;
+            @extend .align-self-md-center;
+        }
+        .discount{
+            @extend .fw-400;
+            @extend .text-clr-black;
+            @extend .fs-xs-8;
+            @extend .lh-xs-12;
+            @extend .fs-pc-10;
+            @extend .lh-pc-18;
+            @extend .fs-tablet-6;
+            @extend .lh-tablet-10;
+            @extend .px-3;
+            @extend .py-1;
+            @extend .btn;
+            @extend .bgclr-aircraft-white;
+        }
+    }
+    .product-buttons{
+        @media (max-width: 767px) {
+            width: 100% !important;
+        }
+        .view-details{
+            background-color: #D9D9D9;
+            @extend .text-clr-black;
+            @extend .fw-500;
+            @extend .fs-xs-14;
+            @extend .lh-xs-21;
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-14;
+            @extend .fs-pc-16;
+            @extend .lh-pc-24;
+            @extend .rounded;
+            @extend .ps-lg-4;
+            @extend .pe-lg-4;
+            @extend .btn;
+            &:hover{
+                background-color: #D9D9D9;
+            }
+        }
+        .add-to-cart{
+            @extend .bgclr-gold;
+            @extend .text-clr-black;
+            @extend .fw-500;
+            @extend .fs-xs-14;
+            @extend .lh-xs-21;
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-14;
+            @extend .fs-pc-16;
+            @extend .lh-pc-24;
+            @extend .rounded;
+            @extend .ps-lg-4;
+            @extend .pe-lg-4;
+            @extend .btn;
+
+        }
+    }
+}
+
+.options-section{
+    input{
+        &:focus{
+            box-shadow: none !important;
+        }
+        &:checked{
+            background-color: #000 !important;
+            border: 1px solid #000 !important;
+            &:focus{
+                box-shadow: none !important;
+                border: 1px solid #000 !important;
+            }
+        }
+    }
+}

@@ -44,12 +44,21 @@
 @import "./blog-page";
 @import "./parts-page";
 @import "./checkout-page";
+@import "./parts-page-search";
 
 
 // Component A
 .component-a {
     @include accordion-styles(
         $accordion-bg: white, 
+        $active-bg-color: black,
+        $icon-color: black, 
+        $icon-active-color: black,
+    );
+}
+.component-b {
+    @include accordion-styles(
+        $accordion-bg: $clr-aircraft-white, 
         $active-bg-color: black,
         $icon-color: black, 
         $icon-active-color: black,
