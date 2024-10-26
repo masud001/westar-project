@@ -1,4 +1,13 @@
 
+
+
+.hero-section{
+    &.parts-page-hero{
+        @media (max-width: 767px) {
+            height: 275px !important;
+        }
+    }
+} 
 .parts-page-select-section{
     label{
         @extend .position-relative;
@@ -259,4 +268,38 @@
             }
         }
     }
+}
+
+.part-page-slider-content{
+    .slider-img{
+        border-radius: 7px;
+        background-color: $clr-aircraft-white;
+        padding: 50px 25px;
+        
+        img{
+            width: 128px;
+            height: 100% !important;
+        }
+    }
+}
+
+.popular-tags{
+    @extend .btn;
+    @extend .bgclr-aircraft-white;
+    @extend .text-clr-black-70;
+    @extend .fw-400;
+    @extend .fs-xs-12;
+    @extend .lh-xs-18;
+    @extend .fs-pc-12;
+    @extend .lh-pc-24;
+    @extend .fs-tablet-9;
+    @extend .lh-tablet-14;
+    @extend .border;
+    @extend .border-clr-black-20;
+    @extend .d-flex; 
+    @extend .text-reset;
+    @extend .text-decoration-none;
+    @extend .align-items-center;
+    @extend .gap-3; 
+    @extend .justify-content-between;
 }
