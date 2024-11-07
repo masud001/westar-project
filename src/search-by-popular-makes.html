@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- swiper slider css file (from local Dir) -->
     <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
     <!-- swiper slider css file (from cdn) -->
@@ -11,10 +10,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     /> -->
-
     <!-- main css file -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Westar Parts page</title>
+    <title>Westar search by popular makes page</title>
   </head>
   <body>
     <div id="root">
@@ -380,372 +378,765 @@
       <div class="offcanvas-backdrop visually-hidden fade show"></div>
       <!-- mobile navigations (sidebar) end-->
 
-      <!-- blog section start -->
-      <div class="blog-section">
+      <!-- page breadcrumb   -->
+      <section class="py-2 py-lg-3 bgclr-white">
         <div class="container">
-          <!-- tranding post slider  -->
-          <div class="row py-4">
+          <div class="row">
             <div class="col-12">
-              <h5 class="slider-title">tranding post</h5>
-              <!-- Slider main container -->
-              <div class="py-4 swiper trandingPostSlider">
-                <div class="swiper-wrapper">
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
+              <nav class="page-breadcrumb" aria-label="breadcrumb">
+                <ul class="m-0 d-flex align-items-center">
+                  <li class="ps-0">
+                    <a
+                      class="text-reset fw-300 text-decoration-none fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="text-reset fw-300 text-decoration-none fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                      href="#"
+                      >Interior</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="text-reset fw-300 text-decoration-none fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                      href="#"
+                      >Switches & Control
+                    </a>
+                  </li>
+                  <li
+                    class="text-clr-black fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                    aria-current="page"
+                  >
+                    Windows Switch
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page breadcrumb  end -->
+
+      <main>
+        <div class="order-details">
+          <div class="container d-flex flex-column gap-3 gap-lg-4 mb-12">
+            <div class="row">
+              <div class="col-12">
+                <h4
+                  class="text-capitalize text-clr-black fw-500 fs-xs-14 lh-xs-21 fs-tablet-10 lh-tablet-14 fs-pc-24 lh-pc-36 m-0 p-0"
+                >
+                  Cheverlot
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- search   -->
+        <div class="search-section mb-17">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="search-form position-relative rounded-1">
+                  <form action="">
+                    <input
+                      type="text"
+                      class="form-control bg-transparent"
+                      placeholder="Search by keyword"
+                    />
+                    <button
+                      type="submit"
+                      class="btn p-1 bgclr-teal text-clr-white fs-6"
+                    >
+                      <span style="width: 20px" class="bg-white px-1 rounded-1"
+                        ><img
+                          width="19"
+                          height="14"
                           class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-blog">
-                      <div class="slider-blog-img position-relative">
-                        <span
-                          class="slider-blog-tag position-absolute end-0 bottom-0"
-                          >Vehicle Regulator</span
-                        >
-                        <img
-                          width="100%"
-                          height="150"
-                          class="img-fluid"
-                          src="./assets/images/blog-page/single-blog-02.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-2 bgclr-white">
-                        <a href="./#" class="slider-blog-title">
-                          Window Regulator Repair Cost: What to Know
-                        </a>
-                        <p class="slider-blog-paragraph">
-                          Operating a car is a complex process that often
-                          requires practice and training.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                          src="./assets/images/search-by-popular/icons/cars-icons.svg"
+                          alt="cars icons"
+                      /></span>
+                      <span>Change Vehicle</span>
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-          <!-- tranding post slider  -->
-          <div class="row py-4">
-            <div class="col-12">
-              <h5 class="slider-title text-capitalize">Search by Catogeries</h5>
-              <!-- Slider main container -->
-              <div class="py-4 swiper trandingPostSlider">
-                <div class="swiper-wrapper">
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-product position-relative rounded-1">
-                      <img
-                        class="img-fluid rounded-1"
-                        width="325"
-                        height="196"
-                        src="./assets/images/parts-page/images/slider-image.webp"
-                        alt=" cart slider"
-                      />
-                      <div class="slider-image-overlay">
-                        <h3>Motor</h3>
-                        <h3>Mounts</h3>
+        </div>
+        <!-- slider section -->
+        <div class="single-slider-section-wrapper">
+          <!-- slider title  -->
+          <div class="container mb-12">
+            <div class="row">
+              <div class="col-12">
+                <h4
+                  class="slider-title text-capitalize text-clr-black fw-500 fs-xs-14 lh-xs-21 fs-tablet-10 lh-tablet-14 fs-pc-24 lh-pc-36 m-0 p-0"
+                >
+                  Engine
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
                       </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-product position-relative rounded-1">
-                      <img
-                        class="img-fluid rounded-1"
-                        width="325"
-                        height="196"
-                        src="./assets/images/parts-page/images/slider-image.webp"
-                        alt=" cart slider"
-                      />
-                      <div class="slider-image-overlay">
-                        <h3>Motor</h3>
-                        <h3>Mounts</h3>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
                       </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-product position-relative rounded-1">
-                      <img
-                        class="img-fluid rounded-1"
-                        width="325"
-                        height="196"
-                        src="./assets/images/parts-page/images/slider-image.webp"
-                        alt=" cart slider"
-                      />
-                      <div class="slider-image-overlay">
-                        <h3>Motor</h3>
-                        <h3>Mounts</h3>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
                       </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-product position-relative rounded-1">
-                      <img
-                        class="img-fluid rounded-1"
-                        width="325"
-                        height="196"
-                        src="./assets/images/parts-page/images/slider-image.webp"
-                        alt=" cart slider"
-                      />
-                      <div class="slider-image-overlay">
-                        <h3>Motor</h3>
-                        <h3>Mounts</h3>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
                       </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-product position-relative rounded-1">
-                      <img
-                        class="img-fluid rounded-1"
-                        width="325"
-                        height="196"
-                        src="./assets/images/parts-page/images/slider-image.webp"
-                        alt=" cart slider"
-                      />
-                      <div class="slider-image-overlay">
-                        <h3>Motor</h3>
-                        <h3>Mounts</h3>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
                       </div>
-                    </div>
-                  </div>
-                  <!-- single slider  -->
-                  <div class="swiper-slide">
-                    <div class="slider-product position-relative rounded-1">
-                      <img
-                        class="img-fluid rounded-1"
-                        width="325"
-                        height="196"
-                        src="./assets/images/parts-page/images/slider-image.webp"
-                        alt=" cart slider"
-                      />
-                      <div class="slider-image-overlay">
-                        <h3>Motor</h3>
-                        <h3>Mounts</h3>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
                       </div>
-                    </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <!-- slider section -->
+        <div class="single-slider-section-wrapper">
+          <!-- slider title  -->
+          <div class="container mb-12">
+            <div class="row">
+              <div class="col-12">
+                <h4
+                  class="slider-title text-capitalize text-clr-black fw-500 fs-xs-14 lh-xs-21 fs-tablet-10 lh-tablet-14 fs-pc-24 lh-pc-36 m-0 p-0"
+                >
+                  Engine
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                    <!-- slider item -->
+                    <a
+                      href="#"
+                      class="swiper-slide text-reset text-decoration-none d-flex justify-content-between align-items-center rounded-1 bgclr-aircraft-white p-2 px-lg-3 py-lg-2"
+                    >
+                      <div
+                        class="slider-content d-flex align-items-center gap-2"
+                      >
+                        <img
+                          width="78"
+                          height="70"
+                          src="https://via.placeholder.com/78x70"
+                          class="img-fluid flex-shrink-0"
+                          alt="slider thumb"
+                        />
+                        <h5
+                          class="fw-400 fs-xs-10 lh-xs-15 fs-tablet-9 lh-tablet-15 fs-pc-16 lh-pc-24"
+                        >
+                          Air Filter & Intake Systems
+                        </h5>
+                      </div>
+                      <div class="">
+                        <span
+                          ><img
+                            width="9"
+                            height="16"
+                            src="./assets/images/search-by-popular/icons/angle-left.svg"
+                            alt="angle left icons"
+                        /></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
       <!-- newsletter subcsription section -->
       <section class="subscription-section bgclr-black pt-20 pb-20">
@@ -1521,89 +1912,38 @@
     <script src="./assets/js/home.js"></script>
     <!-- bootstrap js file (from local Dir) -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- cdn link (for global usage) -->
     <!-- swiper slider js file (from local) -->
     <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <!-- cdn link (for global usage) -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script> -->
-
+    <!-- initiate slider  -->
     <script>
-      // to use (init) this slider you have to use this camel case class name in html
-
-      // tranding post slider
-      const swiper2 = new Swiper(".trandingPostSlider", {
-        // Optional parameters
-        // spaceBetween: 30,
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 39,
         freeMode: true,
         loop: true,
         slidesPerView: 4,
-        // autoplay: {
-        //   delay: 3500,
-        //   disableOnInteraction: true,
-        // },
         breakpoints: {
           320: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             centeredSlides: true,
             spaceBetween: 30,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 60,
-          },
-        },
-
-        // If we need pagination
-        // pagination: {
-        //   el: ".swiper-pagination",
-        // },
-
-        // Navigation arrows
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
-      });
-
-      // slider third
-      const swiper3 = new Swiper(".whatToExpectSlider", {
-        // Optional parameters
-        spaceBetween: 30,
-        freeMode: true,
-        loop: true,
-        slidesPerView: 3,
-        centeredSlides: false,
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: true,
-        },
-        breakpoints: {
-          // Responsive breakpoints
-          320: {
-            slidesPerView: 2,
-            centeredSlides: true,
-          },
-          768: {
-            slidesPerView: 2,
           },
           1024: {
             slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 39,
           },
         },
-
-        // If we need pagination
-        // pagination: {
-        //   el: ".swiper-pagination",
-        // },
-
-        // Navigation arrows
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
       });
     </script>
   </body>

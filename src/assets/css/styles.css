@@ -2753,8 +2753,16 @@ textarea.form-control {
   margin-bottom: 8px !important;
 }
 
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+
 .mb-16 {
   margin-bottom: 16px !important;
+}
+
+.mb-17 {
+  margin-bottom: 17px !important;
 }
 
 .ms-2 {
@@ -2787,6 +2795,11 @@ textarea.form-control {
 
 .p-4 {
   padding: 1.5rem !important;
+}
+
+.px-1 {
+  padding-right: 0.25rem !important;
+  padding-left: 0.25rem !important;
 }
 
 .px-2 {
@@ -3267,6 +3280,10 @@ textarea.form-control {
   .px-lg-3 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  }
+  .py-lg-2 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
   .py-lg-3 {
     padding-top: 1rem !important;
@@ -4648,6 +4665,72 @@ textarea.form-control {
 .product-actions a {
   padding: 13px 26px;
 }
+.search-form {
+  background-color: #F5F5F5;
+  padding: 23px 26px;
+}
+@media (min-width: 320px) {
+  .search-form {
+    height: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .search-form {
+    height: 86px;
+  }
+}
+.search-form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  padding-left: 26px;
+}
+.search-form input::placeholder {
+  color: #000;
+  font-weight: 300;
+}
+@media (min-width: 320px) {
+  .search-form input::placeholder {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .search-form input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .search-form input::placeholder {
+    font-size: 20px;
+  }
+}
+.search-form input:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: 0;
+}
+.search-form button {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 300;
+}
+
+.slider-title {
+  margin-top: 17px;
+  margin-bottom: 12px;
+}
+
+.single-slider-section-wrapper {
+  margin-bottom: 23px;
+}
+
 .component-a .accordion {
   background-color: white;
 }
