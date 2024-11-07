@@ -6,12 +6,12 @@
   }
 }
 @media (min-width: 0) {
-  .fs-xs-10, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .live-chat-section p, .single-product .price .previous-price, .single-product p, .single-product h5, .single-product .h5, .change-link, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p, .slider-title, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title {
+  .fs-xs-10, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-details .single_details h6, .account-details .single_details .h6, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .live-chat-section p, .single-product .price .previous-price, .single-product p, .single-product h5, .single-product .h5, .change-link, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p, .slider-title, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title {
     font-size: 10px;
   }
 }
 @media (min-width: 0) {
-  .fs-xs-12, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section h6, .live-chat-section .h6, .popular-tags, .single-select-tag label, .search-type, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .checkout-header-section span, .single-blog-time, .blog-paragraph {
+  .fs-xs-12, .account-details .single_details h4, .account-details .single_details .h4, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section h6, .live-chat-section .h6, .popular-tags, .single-select-tag label, .search-type, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .checkout-header-section span, .single-blog-time, .blog-paragraph {
     font-size: 12px;
   }
 }
@@ -61,7 +61,7 @@
   }
 }
 @media (min-width: 831.37px) {
-  .fs-tablet-9, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .order-status h4, .order-status .h4, .order-details-heading, .popular-tags, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product .price .current-price, .single-product h3, .single-product .h3, .single-select-tag label, .search-type, .change-link, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-title, .slider-blog .slider-blog-title, .blog-pragraph-title {
+  .fs-tablet-9, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-details .single_details h4, .account-details .single_details .h4, .account-details .single_details h6, .account-details .single_details .h6, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .order-status h4, .order-status .h4, .order-details-heading, .popular-tags, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product .price .current-price, .single-product h3, .single-product .h3, .single-select-tag label, .search-type, .change-link, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-title, .slider-blog .slider-blog-title, .blog-pragraph-title {
     font-size: 9.24px;
   }
 }
@@ -91,7 +91,7 @@
   }
 }
 @media (min-width: 1440px) {
-  .fs-pc-12, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section h6, .live-chat-section .h6, .popular-tags, .single-product p, .single-product h5, .single-product .h5, .single-select-tag label, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p, .slider-blog .slider-blog-paragraph, .single-blog-time {
+  .fs-pc-12, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-details .single_details h6, .account-details .single_details .h6, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section h6, .live-chat-section .h6, .popular-tags, .single-product p, .single-product h5, .single-product .h5, .single-select-tag label, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p, .slider-blog .slider-blog-paragraph, .single-blog-time {
     font-size: 12px;
   }
 }
@@ -106,7 +106,7 @@
   }
 }
 @media (min-width: 1440px) {
-  .fs-pc-16, .product-actions a, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card h5, .order-info-card .h5, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .search-type, .change-link, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-blog .slider-blog-title, .blog-pragraph-title {
+  .fs-pc-16, .account-menu ul li a, .account-details .single_details h4, .account-details .single_details .h4, .product-actions a, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card h5, .order-info-card .h5, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .search-type, .change-link, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-blog .slider-blog-title, .blog-pragraph-title {
     font-size: 16px;
   }
 }
@@ -156,7 +156,7 @@
   }
 }
 @media (min-width: 0) {
-  .lh-xs-18, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .popular-tags, .single-select-tag label, .search-type, .shipping-information select::placeholder, .shipping-information input::placeholder, .payment-methods .method-label, .checkbox-wrapper p, .checkbox-wrapper h5, .checkbox-wrapper .h5, .checkout-header-section span, .single-blog-time, .blog-paragraph {
+  .lh-xs-18, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-details .single_details h4, .account-details .single_details .h4, .account-details .single_details h6, .account-details .single_details .h6, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .popular-tags, .single-select-tag label, .search-type, .shipping-information select::placeholder, .shipping-information input::placeholder, .payment-methods .method-label, .checkbox-wrapper p, .checkbox-wrapper h5, .checkbox-wrapper .h5, .checkout-header-section span, .single-blog-time, .blog-paragraph {
     line-height: 18px;
   }
 }
@@ -196,7 +196,7 @@
   }
 }
 @media (min-width: 831.37px) {
-  .lh-tablet-12, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .order-status h4, .order-status .h4, .order-details-heading, .slider-title, .slider-blog .slider-blog-title, .blog-pragraph-title, .blog-paragraph {
+  .lh-tablet-12, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-details .single_details h4, .account-details .single_details .h4, .account-details .single_details h6, .account-details .single_details .h6, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .order-status h4, .order-status .h4, .order-details-heading, .slider-title, .slider-blog .slider-blog-title, .blog-pragraph-title, .blog-paragraph {
     line-height: 12px;
   }
 }
@@ -231,7 +231,7 @@
   }
 }
 @media (min-width: 1440px) {
-  .lh-pc-18, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .single-product .price .discount, .single-product .price .previous-price, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph {
+  .lh-pc-18, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-details .single_details h6, .account-details .single_details .h6, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .single-product .price .discount, .single-product .price .previous-price, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph {
     line-height: 18px;
   }
 }
@@ -241,7 +241,7 @@
   }
 }
 @media (min-width: 1440px) {
-  .lh-pc-24, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card h5, .order-info-card .h5, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .popular-tags, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product .price .current-price, .single-product h3, .single-product .h3, .single-select-tag label, .search-type, .change-link, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .blog-pragraph-title {
+  .lh-pc-24, .account-menu ul li a, .account-details .single_details h4, .account-details .single_details .h4, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card h5, .order-info-card .h5, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .popular-tags, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product .price .current-price, .single-product h3, .single-product .h3, .single-select-tag label, .search-type, .change-link, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .blog-pragraph-title {
     line-height: 24px;
   }
 }
@@ -2501,7 +2501,7 @@ textarea.form-control {
   display: grid !important;
 }
 
-.d-flex, .popular-tags, .cart-badge, .slider-product .slider-image-overlay, .single-blog {
+.d-flex, .account-menu ul li a, .popular-tags, .cart-badge, .slider-product .slider-image-overlay, .single-blog {
   display: flex !important;
 }
 
@@ -2589,6 +2589,10 @@ textarea.form-control {
   border-color: #FFE800 !important;
 }
 
+.border-clr-teal {
+  border-color: #004AAD !important;
+}
+
 .border-clr-miyazaki-verdant {
   border-color: rgb(121, 225, 72) !important;
 }
@@ -2633,7 +2637,7 @@ textarea.form-control {
   flex-wrap: wrap !important;
 }
 
-.justify-content-start {
+.justify-content-start, .account-menu ul li a {
   justify-content: flex-start !important;
 }
 
@@ -2657,7 +2661,7 @@ textarea.form-control {
   align-items: flex-start !important;
 }
 
-.align-items-center, .popular-tags, .cart-badge {
+.align-items-center, .account-menu ul li a, .popular-tags, .cart-badge {
   align-items: center !important;
 }
 
@@ -2693,7 +2697,7 @@ textarea.form-control {
   order: 2 !important;
 }
 
-.m-0, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .order-status h4, .order-status .h4, .order-details-heading, .single-product p, .single-product h5, .single-product .h5, .single-product h3, .single-product .h3, .search-type, .product-title, .slider-product h3, .slider-product .h3, .slider-title, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title, .single-blog-time, .blog-pragraph-title, .blog-paragraph {
+.m-0, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-menu ul, .account-details .single_details h4, .account-details .single_details .h4, .account-details .single_details h6, .account-details .single_details .h6, .product-actions a, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .order-status h4, .order-status .h4, .order-details-heading, .single-product p, .single-product h5, .single-product .h5, .single-product h3, .single-product .h3, .search-type, .product-title, .slider-product h3, .slider-product .h3, .slider-title, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title, .single-blog-time, .blog-pragraph-title, .blog-paragraph {
   margin: 0 !important;
 }
 
@@ -2765,6 +2769,10 @@ textarea.form-control {
   margin-bottom: 17px !important;
 }
 
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
 .ms-2 {
   margin-left: 0.5rem !important;
 }
@@ -2777,7 +2785,7 @@ textarea.form-control {
   margin-left: 1.5rem !important;
 }
 
-.p-0, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .order-status h4, .order-status .h4, .order-details-heading, .single-product p, .single-product h5, .single-product .h5, .single-product h3, .single-product .h3, .search-type, .product-title, .slider-product h3, .slider-product .h3, .slider-title, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title, .single-blog-time, .blog-paragraph {
+.p-0, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-menu ul, .account-details .single_details h4, .account-details .single_details .h4, .account-details .single_details h6, .account-details .single_details .h6, .product-card .product-details .order-features p, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .status-details h5, .status-details .h5, .order-status h4, .order-status .h4, .order-details-heading, .single-product p, .single-product h5, .single-product .h5, .single-product h3, .single-product .h3, .search-type, .product-title, .slider-product h3, .slider-product .h3, .slider-title, .slider-blog .slider-blog-tag, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title, .single-blog-time, .blog-paragraph {
   padding: 0 !important;
 }
 
@@ -2930,12 +2938,20 @@ textarea.form-control {
   gap: 0.5rem !important;
 }
 
-.gap-3, .popular-tags {
+.gap-3, .account-menu ul li a, .popular-tags {
   gap: 1rem !important;
 }
 
 .gap-4 {
   gap: 1.5rem !important;
+}
+
+.gap-5 {
+  gap: 3rem !important;
+}
+
+.row-gap-5 {
+  row-gap: 3rem !important;
 }
 
 .fs-6 {
@@ -2946,11 +2962,11 @@ textarea.form-control {
   font-weight: 300 !important;
 }
 
-.fw-400, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .popular-tags, .single-product .price .discount, .single-product .price .previous-price, .single-product h5, .single-product .h5, .single-select-tag label, .search-type, .change-link, .payment-methods .method-label, .slider-blog .slider-blog-tag {
+.fw-400, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-details .single_details h4, .account-details .single_details .h4, .account-details .single_details h6, .account-details .single_details .h6, .order-info-card .order-history-amount, .order-info-card .order-history-title, .order-info-card ul li span, .order-info-card ul li h6, .order-info-card ul li .h6, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .popular-tags, .single-product .price .discount, .single-product .price .previous-price, .single-product h5, .single-product .h5, .single-select-tag label, .search-type, .change-link, .payment-methods .method-label, .slider-blog .slider-blog-tag {
   font-weight: 400 !important;
 }
 
-.fw-500, .product-actions a, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card .subtotal-title, .order-info-card h5, .order-info-card .h5, .status-details h5, .status-details .h5, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product h5 span, .single-product .h5 span, .cart-badge, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-title, .slider-blog .slider-blog-title, .single-blog-time, .blog-pragraph-title {
+.fw-500, .account-menu ul li a, .product-actions a, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card .subtotal-title, .order-info-card h5, .order-info-card .h5, .status-details h5, .status-details .h5, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product h5 span, .single-product .h5 span, .cart-badge, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-title, .slider-blog .slider-blog-title, .single-blog-time, .blog-pragraph-title {
   font-weight: 500 !important;
 }
 
@@ -2974,7 +2990,7 @@ textarea.form-control {
   text-align: center !important;
 }
 
-.text-decoration-none, .product-actions a, .popular-tags, .slider-product h3, .slider-product .h3, .slider-title, .slider-blog .slider-blog-title {
+.text-decoration-none, .account-menu ul li a, .product-actions a, .popular-tags, .slider-product h3, .slider-product .h3, .slider-title, .slider-blog .slider-blog-title {
   text-decoration: none !important;
 }
 
@@ -3013,7 +3029,7 @@ textarea.form-control {
   color: inherit !important;
 }
 
-.text-clr-black, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .status-details h5, .status-details .h5, .order-details-heading, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product .price .discount, .single-product .price .current-price, .single-product p, .single-product h5, .single-product .h5, .single-product h3, .single-product .h3, .single-select-tag input:checked + label, .product-title, .parts-page-select-section label, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-title, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title, .blog-pragraph-title, .blog-paragraph {
+.text-clr-black, .my-account-order-history .single_details h4, .my-account-order-history .single_details .h4, .account-details .single_details h4, .account-details .single_details .h4, .product-card .product-details h4, .product-card .product-details .h4, .order-info-card .subtotal-amount, .order-info-card .subtotal-title, .order-info-card .order-history-amount, .order-info-card ul li h6, .order-info-card ul li .h6, .order-info-card h5, .order-info-card .h5, .status-details h5, .status-details .h5, .order-details-heading, .single-product .product-buttons .add-to-cart, .single-product .product-buttons .view-details, .single-product .price .discount, .single-product .price .current-price, .single-product p, .single-product h5, .single-product .h5, .single-product h3, .single-product .h3, .single-select-tag input:checked + label, .product-title, .parts-page-select-section label, .payment-methods .method-label, .checkbox-wrapper h5, .checkbox-wrapper .h5, .slider-title, .slider-blog .slider-blog-paragraph, .slider-blog .slider-blog-title, .blog-pragraph-title, .blog-paragraph {
   color: rgb(0, 0, 0) !important;
 }
 
@@ -3021,7 +3037,7 @@ textarea.form-control {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.text-clr-black-70, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card .order-history-title, .order-info-card ul li span, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .popular-tags, .single-select-tag label, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p {
+.text-clr-black-70, .my-account-order-history .single_details h6, .my-account-order-history .single_details .h6, .account-menu ul li a, .account-details .single_details h6, .account-details .single_details .h6, .product-card .product-details h6, .product-card .product-details .h6, .product-card .product-details h5, .product-card .product-details .h5, .order-info-card .order-history-title, .order-info-card ul li span, .live-chat-section p, .live-chat-section h6, .live-chat-section .h6, .status-details h6, .status-details .h6, .popular-tags, .single-select-tag label, .shipping-information select::placeholder, .shipping-information input::placeholder, .checkbox-wrapper p {
   color: rgba(0, 0, 0, 0.7) !important;
 }
 
@@ -4729,6 +4745,37 @@ textarea.form-control {
 
 .single-slider-section-wrapper {
   margin-bottom: 23px;
+}
+
+.account-menu {
+  margin-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.account-menu ul {
+  list-style-type: none;
+}
+.account-menu ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px 0px;
+  display: block;
+}
+.vahicales-details {
+  min-height: 200px;
+}
+@media (min-width: 320px) {
+  .vahicales-details {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .vahicales-details {
+    width: 75%;
+  }
+}
+@media (min-width: 1080px) {
+  .vahicales-details {
+    width: 50%;
+  }
 }
 
 .component-a .accordion {

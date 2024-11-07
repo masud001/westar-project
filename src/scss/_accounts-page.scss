@@ -1,0 +1,101 @@
+.account-details{
+    .single_details{
+        h6{
+            @extend .text-clr-black-70;
+            @extend .fw-400;
+            @extend .fs-xs-10;
+            @extend .lh-xs-18; 
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-12;
+            @extend .fs-pc-12;
+            @extend .lh-pc-18;
+            @extend .p-0;
+            @extend .m-0;
+        }
+        h4{
+            @extend .text-clr-black;
+            @extend .fw-400;
+            @extend .fs-xs-12;
+            @extend .lh-xs-18; 
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-12;
+            @extend .fs-pc-16;
+            @extend .lh-pc-24;
+            @extend .p-0;
+            @extend .m-0;
+        }
+    }
+}
+
+.account-menu{
+    margin-top: 20px;
+    border-top: 1px solid $clr-black-20;
+    ul{
+        @extend .m-0;
+        @extend .p-0;
+        list-style-type: none;
+        li{
+            border-bottom: 1px solid $clr-black-20;
+            padding: 16px 0px;
+            display: block;
+            a{
+                @extend .text-clr-black-70;
+                @extend .fw-500;
+                @extend .fs-xs-10;
+                @extend .lh-xs-18; 
+                @extend .fs-tablet-9;
+                @extend .lh-tablet-12;
+                @extend .fs-pc-16;
+                @extend .lh-pc-24;
+                @extend .p-0;
+                @extend .m-0;
+                @extend .text-decoration-none;
+                @extend .d-flex;
+                @extend .justify-content-start;
+                @extend .align-items-center;
+                @extend .gap-3;
+            }
+        }
+    }
+}
+
+.vahicales-details{
+    min-height: 200px;
+    @media (min-width:320px){
+        width: 100%;
+    }
+    @media (min-width:768px){
+        width: 75%;
+    }
+    @media (min-width:1080px){
+        width: 50%;
+    }
+}
+.my-account-order-history{
+    .single_details{
+         h6{
+            @extend .text-clr-black-70;
+            @extend .fw-400;
+            @extend .fs-xs-10;
+            @extend .lh-xs-18; 
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-12;
+            @extend .fs-pc-12;
+            @extend .lh-pc-18;
+            @extend .p-0;
+            @extend .m-0;
+        }
+        h4{
+            @extend .text-clr-black;
+            @extend .fw-400;
+            @extend .fs-xs-10;
+            @extend .lh-xs-18; 
+            @extend .fs-tablet-9;
+            @extend .lh-tablet-12;
+            @extend .fs-pc-12;
+            @extend .lh-pc-18;
+            @extend .p-0;
+            @extend .m-0;
+        }
+    }
+}
